@@ -1,8 +1,7 @@
 ## Welcome to My Website
 
-My name is Klein Wang, and I am currently studying at the _University of Warwick_, under a 4 year MORSE program.
+My name is Klein Wang, and I am currently studying at the _University of Warwick_(![main building](https://www.ilwindia.com/wp-content/uploads/2019/06/University_of_warwick.jpg)), under a 4 year MORSE program.
 
-![photo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ilwindia.com%2Funiversity%2Funiversity-of-warwick%2F&psig=AOvVaw2MrWO8kYxEX5zhdNjXzVjF&ust=1611381755008000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPjNyoDvru4CFQAAAAAdAAAAABAD)
 
 ### Check my other pages
 
