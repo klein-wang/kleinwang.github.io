@@ -1,4 +1,8 @@
-## Welcome to GitHub Pages
+## Welcome to My Website
+
+My name is Klein Wang, and I am currently studying at the _University of Warwick_, under a 4 year MORSE program. 
+
+
 
 You can use the [editor on GitHub](https://github.com/klein-wang/kleinwang.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
