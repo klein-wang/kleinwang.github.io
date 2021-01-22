@@ -1,7 +1,8 @@
 ## Welcome to My Website
 
-My name is Klein Wang, and I am currently studying at the _University of Warwick_(![main building](https://www.ilwindia.com/wp-content/uploads/2019/06/University_of_warwick.jpg)), under a 4 year MORSE program.
+My name is Klein Wang, and I am currently studying at the _University of Warwick_, under a 4 year MORSE program.
 
+![main building](https://i.guim.co.uk/img/media/44a6cce8f083537ff96ac9336f09699898f94c48/0_80_1199_719/master/1199.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&s=0be65764ded7177b15c377f435f913f8)
 
 ### Check my other pages
 
@@ -18,11 +19,7 @@ My Douban page: [https://www.douban.com/people/229534905/](https://www.douban.co
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
 ```markdown
-Syntax highlighted code block
-
 # Header 1
 ## Header 2
 ### Header 3
