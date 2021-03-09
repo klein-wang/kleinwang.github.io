@@ -16,6 +16,9 @@ My Douban page: [https://www.douban.com/people/229534905/](https://www.douban.co
  [editor on GitHub](https://github.com/klein-wang/kleinwang.github.io/edit/gh-pages/index.md) 
 
 
+![mars ticket 2026](https://mars.nasa.gov/layout/embed/send-your-name/future/certificate/?cn=917641218492)
+
+
 ### Markdown
 
 ```markdown
