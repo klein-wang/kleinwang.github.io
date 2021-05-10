@@ -11,7 +11,7 @@ My Zhihu page: [https://www.zhihu.com/people/wang-yuan-chen-24](Zhihu-知乎)
 
 My Bilibili page: [https://space.bilibili.com/15471282](b站)
 
-My Douban page: [https://www.douban.com/people/229534905/](豆瓣)
+My Douban page: [豆瓣](https://www.douban.com/people/229534905/)
 
 
  [editor on GitHub](https://github.com/klein-wang/kleinwang.github.io/edit/gh-pages/index.md) 
