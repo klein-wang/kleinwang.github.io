@@ -5,12 +5,13 @@ My name is Klein Wang, and I am currently studying at the _University of Warwick
 ![main building](https://i.guim.co.uk/img/media/44a6cce8f083537ff96ac9336f09699898f94c48/0_80_1199_719/master/1199.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&s=0be65764ded7177b15c377f435f913f8)
 
 ### Check my other pages
+My LinkedIn page: [https://www.linkedin.com/in/yuanchen-klein-wang-87004a112/](LinkedIn)
 
-My Zhihu page: [https://www.zhihu.com/people/wang-yuan-chen-24](https://www.zhihu.com/people/wang-yuan-chen-24)
+My Zhihu page: [https://www.zhihu.com/people/wang-yuan-chen-24](Zhihu-知乎)
 
-My Bilibili page: [https://space.bilibili.com/15471282](https://space.bilibili.com/15471282)
+My Bilibili page: [https://space.bilibili.com/15471282](b站)
 
-My Douban page: [https://www.douban.com/people/229534905/](https://www.douban.com/people/229534905/)
+My Douban page: [https://www.douban.com/people/229534905/](豆瓣)
 
 
  [editor on GitHub](https://github.com/klein-wang/kleinwang.github.io/edit/gh-pages/index.md) 
