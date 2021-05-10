@@ -6,11 +6,11 @@ My name is Klein Wang, and I am currently studying at the _University of Warwick
 
 ### Check my other pages
 
-My LinkedIn page: [https://www.linkedin.com/in/yuanchen-klein-wang-87004a112/](LinkedIn)
+My LinkedIn page: [LinkedIn](https://www.linkedin.com/in/yuanchen-klein-wang-87004a112/)
 
-My Zhihu page: [https://www.zhihu.com/people/wang-yuan-chen-24](Zhihu-知乎)
+My Zhihu page: [Zhihu-知乎](https://www.zhihu.com/people/wang-yuan-chen-24)
 
-My Bilibili page: [https://space.bilibili.com/15471282](b站)
+My Bilibili page: [b站](https://space.bilibili.com/15471282)
 
 My Douban page: [豆瓣](https://www.douban.com/people/229534905/)
 
