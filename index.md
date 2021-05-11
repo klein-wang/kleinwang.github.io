@@ -6,7 +6,7 @@ My academic interests include optimisation problems, linear statistical modellin
 ### Check out my other pages
 
 [LinkedIn](https://www.linkedin.com/in/yuanchen-klein-wang-87004a112/)
-| [知乎](https://www.zhihu.com/people/wang-yuan-chen-24)、
+| [知乎](https://www.zhihu.com/people/wang-yuan-chen-24)
 | [豆瓣](https://www.douban.com/people/229534905/)
 | [b站](https://space.bilibili.com/15471282)
 
