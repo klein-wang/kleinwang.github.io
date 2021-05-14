@@ -24,9 +24,6 @@ In my personal columns at [知乎](https://www.zhihu.com/people/wang-yuan-chen-2
 - Others: UiPath Studio
 
 
- [editor on GitHub](https://github.com/klein-wang/kleinwang.github.io/edit/gh-pages/index.md) 
-
-
 ## My footprints
 
 <table>
@@ -36,4 +33,5 @@ In my personal columns at [知乎](https://www.zhihu.com/people/wang-yuan-chen-2
     </tr>
 </table>
 
-Yes
+
+[editor on GitHub](https://github.com/klein-wang/kleinwang.github.io/edit/gh-pages/index.md) 
