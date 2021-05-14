@@ -23,6 +23,9 @@ In my personal columns at [知乎](https://www.zhihu.com/people/wang-yuan-chen-2
 - Writing: LaTex, RMarkdown
 - Others: UiPath Studio
 
+## Contact me
+
+- Email: 2370347112@qq.com
 
 ## My footprints
 
