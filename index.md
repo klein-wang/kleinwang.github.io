@@ -12,12 +12,12 @@ My academic interests include optimisation problems, linear statistical modellin
 
 
 
- [editor on GitHub](https://github.com/klein-wang/kleinwang.github.io/edit/gh-pages/index.md) 
 
 
 
 
-![mars ticket 2026](https://raw.githubusercontent.com/klein-wang/img/main/BoardingPass_MyNameOnFutureMission.png)
+
+![mars ticket 2026](https://github.com/klein-wang/img/blob/main/BoardingPass_MyNameOnFutureMission.png)
 
 
 ### Markdown
@@ -35,3 +35,5 @@ My academic interests include optimisation problems, linear statistical modellin
 
 [Link](url) and ![Image](src)
 ```
+
+ [editor on GitHub](https://github.com/klein-wang/kleinwang.github.io/edit/gh-pages/index.md) 
