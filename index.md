@@ -5,7 +5,7 @@ My academic interests include optimisation problems, linear statistical modellin
 
 ## Check out my other pages
 
-If you have find common interests in my introduction and wish to read more, please check out my other pages below:
+If you have found common interests in my introduction and you wish to read more, please check out my other pages below:
 
 [LinkedIn](https://www.linkedin.com/in/yuanchen-klein-wang-87004a112/)
 | [知乎](https://www.zhihu.com/people/wang-yuan-chen-24)
@@ -20,12 +20,15 @@ In my personal columns at [知乎](https://www.zhihu.com/people/wang-yuan-chen-2
 ## Skills & Projects
 
 - Data Science tools: Excel, VBA, MySQL, R, Python, PowerBI, Tableau
-- Writing: LaTex, RMarkdown
-- Others: UiPath Studio
+- Writing: LaTex, RMarkdown, HTML
+- Other tools: UiPath Studio, Simul8, Adobe Premier
+- Hobbies: Boxing/Muay Thai, Fitness, Hip Pop, Self-media creation, Yoyo, Wildlife Protection
+- Languages: Mandarin/Chinese (native), English (fluent), German (intermediate) and Cantonese (beginner)
 
 ## Contact me
 
 - Email: 2370347112@qq.com
+- wx: klein-wang
 
 ## My footprints
 
