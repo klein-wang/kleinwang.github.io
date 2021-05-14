@@ -19,8 +19,8 @@ In my personal columns at [知乎](https://www.zhihu.com/people/wang-yuan-chen-2
 <!DOCTYPE html>
 <table>
     <tr>
-        <td ><center><img src="https://i.loli.net/2021/05/14/rhSydGiMbJq9eCp.jpg" >图1  boxing </center></td>
-        <td ><center><img src="https://i.loli.net/2021/05/14/2xTRXe3Fb61gHL5.jpg"  >图2 training</center></td>
+        <td ><center><img src="https://i.loli.net/2021/05/14/rhSydGiMbJq9eCp.jpg" >boxing </center></td>
+        <td ><center><img src="https://i.loli.net/2021/05/14/2xTRXe3Fb61gHL5.jpg"  >training</center></td>
     </tr>
 <table>
 </html>
