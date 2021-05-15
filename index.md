@@ -39,7 +39,6 @@ In my personal columns at [知乎](https://www.zhihu.com/people/wang-yuan-chen-2
     </tr>
 </table>
 
-![file]("https://i.loli.net/2021/05/14/rhSydGiMbJq9eCp.jpg")
 
 
 [editor on GitHub](https://github.com/klein-wang/kleinwang.github.io/edit/gh-pages/index.md) 
