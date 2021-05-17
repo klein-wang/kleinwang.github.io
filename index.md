@@ -34,8 +34,12 @@ In my personal columns at [知乎](https://www.zhihu.com/people/wang-yuan-chen-2
 
 <table>
     <tr>
-        <td ><center><img src="https://i.loli.net/2021/05/14/rhSydGiMbJq9eCp.jpg" >boxing </center></td>
-        <td ><center><img src="https://i.loli.net/2021/05/14/2xTRXe3Fb61gHL5.jpg"  >training</center></td>
+        <td ><center><img src="https://i.loli.net/2021/05/17/IjBNFtHERmkJXOi.jpg" >Madrid </center></td>
+        <td ><center><img src="https://i.loli.net/2021/05/17/WnPf2ixXGZzj4mT.jpg" >London </center></td>
+    </tr>
+    <tr>
+        <td ><center><img src="https://i.loli.net/2021/05/17/8Y7lSGqzTyjBN4F.jpg" >Bangkok </center></td>
+        <td ><center><img src="https://i.loli.net/2021/05/17/B4DR58mEliYspFw.jpg" >Fukuoka </center></td>
     </tr>
 </table>
 
