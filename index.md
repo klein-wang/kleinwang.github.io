@@ -6,7 +6,6 @@ My academic interests include optimisation problems, linear statistical modellin
 
 <div class="menu">
     <ul>
-    <li><a href="index.html"><b>个人主页</b></a></li>
     <li><a href="intro.html">个人介绍</a></li>
     </ul>
 </div>
@@ -22,8 +21,6 @@ If you have found common interests in my introduction and you wish to read more,
 | [b站](https://space.bilibili.com/15471282)
 
 In my personal columns at [知乎](https://www.zhihu.com/people/wang-yuan-chen-24) ,I have been posting weekly articles about financial news and reading notes. I will publish my personal [reading list](https://zhuanlan.zhihu.com/p/366324411) every 6 months, in which I recommend 20 of my favourite books to you. 
-
-
 
 
 ## Skills & Projects
