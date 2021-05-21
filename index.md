@@ -1,19 +1,18 @@
-<div class="title">klein-wang.github.io</div>
-    <div class="menu">
-    <ul>
-    <li><a href="index.md"><b>个人主页</b></a></li>
-    <li><a href="index.html">个人介绍</a></li>
-    </ul>
-	</div>
-   
-   
-   
 
 
 ## Welcome to My Channel
 
 My name is Klein, and I am currently studying at the _University of Warwick_, under a 4-year MORSE program. 
 My academic interests include optimisation problems, linear statistical modelling and machine learning related to strategic investment. 
+
+
+<div class="menu">
+    <ul>
+    <li><a href="index.md"><b>个人主页</b></a></li>
+    <li><a href="index.html">个人介绍</a></li>
+    </ul>
+</div>
+
 
 ## Check out my other pages
 
