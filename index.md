@@ -1,5 +1,3 @@
-
-
 ## Welcome to My Channel
 
 My name is Klein, and I am currently studying at the _University of Warwick_, under a 4-year MORSE program. 
@@ -9,7 +7,7 @@ My academic interests include optimisation problems, linear statistical modellin
 <div class="menu">
     <ul>
     <li><a href="index.html"><b>个人主页</b></a></li>
-    <li><a href="index.html">个人介绍</a></li>
+    <li><a href="intro.html">个人介绍</a></li>
     </ul>
 </div>
 
