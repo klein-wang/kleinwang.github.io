@@ -7,6 +7,7 @@ My academic interests include optimisation problems, linear statistical modellin
 <div class="menu">
     <ul>
     <li><a href="cn.html">我的中文页面</a></li>
+    <li><a href="docs">页面</a></li>
     <li><a href="intro.html">Bit About Me</a></li>
     <li><a href="blog.html">Personal Blog</a></li>
     </ul>
