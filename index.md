@@ -6,10 +6,10 @@ My academic interests include optimisation problems, linear statistical modellin
 
 <div class="menu">
     <ul>
-    <li><a href="cn.html">我的中文页面</a></li>
-    <li><a href="docs">页面</a></li>
-    <li><a href="intro.html">Bit About Me</a></li>
-    <li><a href="blog.html">Personal Blog</a></li>
+    <li><a href="cn">我的中文页面</a></li>
+    <li><a href="docs">docs</a></li>
+    <li><a href="intro">Bit About Me</a></li>
+    <li><a href="blog">Personal Blog</a></li>
     </ul>
 </div>
 
@@ -23,7 +23,7 @@ If you have found common interests in my introduction and you wish to read more,
 | [Douban](https://www.douban.com/people/229534905/)
 | [Bilibili](https://space.bilibili.com/15471282)
 
-In my personal columns at [Zhihu](https://www.zhihu.com/people/wang-yuan-chen-24) ,I have been posting weekly articles about financial news and reading notes. I will publish my personal [reading list](https://zhuanlan.zhihu.com/p/366324411) every 6 months, in which I recommend 20 of my favourite books to you. 
+In my personal columns at [Zhihu](https://www.zhihu.com/people/wang-yuan-chen-24), I have been posting weekly articles about financial news and reading notes. I will publish my personal [reading list](https://zhuanlan.zhihu.com/p/366324411) every 6 months, in which I recommend 20 of my favorite books to you. 
 
 
 ## Skills & Projects
