@@ -17,12 +17,12 @@
 
 如果你喜欢我分享的内容，希望阅读更多我的其他文章，可以follow我的社交媒体:
 
-[LinkedIn](https://www.linkedin.com/in/yuanchen-klein-wang-87004a112/)
+[领英](https://www.linkedin.com/in/yuanchen-klein-wang-87004a112/)
 | [知乎](https://www.zhihu.com/people/wang-yuan-chen-24)
 | [豆瓣](https://www.douban.com/people/229534905/)
-| [Bilibili](https://space.bilibili.com/15471282)
+| [哔哩哔哩](https://space.bilibili.com/15471282)
 
-在我[知乎](https://www.zhihu.com/people/wang-yuan-chen-24)的个人博客里，我会分享关于日常的财经新闻和个人读书笔记。定期我也会整理自己的阅读书籍，选取20本我个人受益匪浅的书籍推荐给你们，这是我最新的阅读清单[2021年阅读清单](https://zhuanlan.zhihu.com/p/366324411)。
+在我[知乎](https://www.zhihu.com/people/wang-yuan-chen-24)的个人博客里，我会分享关于日常的财经新闻和个人读书笔记。定期我也会整理自己的阅读书籍，选取20本我个人受益匪浅的书籍推荐给你们，这是我最新的[2021年阅读清单](https://zhuanlan.zhihu.com/p/366324411)。
 
 
 ## Skills & Projects
