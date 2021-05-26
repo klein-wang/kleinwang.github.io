@@ -4,6 +4,20 @@ My name is Klein, and I am currently studying at the _University of Warwick_, un
 My academic interests include optimisation problems, linear statistical modelling and machine learning related to strategic investment. 
 
 
+<nav> <!-- 本站统一的导航栏 -->
+      <ul>
+        <li><a href="cn">我的中文页面</a></li>
+        <li><a href="docs">docs</a></li>
+        <li><a href="intro">Bit About Me</a></li>
+        <li><a href="blog">Personal Blog</a></li>
+      </ul>
+
+      <form> <!-- 搜索栏是站点内导航的一个非线性的方式。 -->
+        <input type="search" name="q" placeholder="要搜索的内容">
+        <input type="submit" value="搜索">
+      </form>
+    </nav>
+
 <div class="menu">
     <ul>
     <li><a href="cn">我的中文页面</a></li>
