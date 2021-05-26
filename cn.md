@@ -24,13 +24,13 @@
 在我[知乎](https://www.zhihu.com/people/wang-yuan-chen-24)的个人博客里，我会分享关于日常的财经新闻和个人读书笔记。定期我也会整理自己的阅读书籍，选取20本我个人受益匪浅的书籍推荐给你们，这是我最新的[2021年阅读清单](https://zhuanlan.zhihu.com/p/366324411)。
 
 
-## Skills & Projects
+## 技能&工具
 
-- Data Science tools: Excel, VBA, MySQL, R, Python, PowerBI, Tableau
-- Writing: LaTex, RMarkdown, HTML
-- Other tools: UiPath Studio, Simul8, Adobe Premier
-- Hobbies: Boxing/Muay Thai, Fitness, Hip Pop, Self-media creation, Yoyo, Wildlife Protection
-- Languages: Mandarin/Chinese (native), English (fluent), German (intermediate) and Cantonese (beginner)
+- **Data Science**: Excel, VBA, MySQL, R, Python, PowerBI, Tableau, SQL
+- **Writing**: LaTex, Markdown, HTML
+- **Other tools**: UiPath Studio, Simul8, Adobe Premier
+- **Hobbies**: Boxing/Muay Thai, Fitness, Hip Pop, Photography, Yoyo, Wildlife Protection
+- **Languages**: Mandarin, English, German and Cantonese
 
 ## 我的联系方式
 
