@@ -13,20 +13,10 @@ My academic interests include optimisation problems, linear statistical modellin
       </ul>
 
       <form> <!-- 搜索栏是站点内导航的一个非线性的方式。 -->
-        <input type="search" name="q" placeholder="要搜索的内容">
-        <input type="submit" value="搜索">
+        <input type="text" class="search" name="q" placeholder="Search Content">
+        <input type="button" value="Search" name="" id="" class="btn">
       </form>
 </nav>
-
-
-<div class="menu">
-    <ul>
-    <li><a href="cn">我的中文页面</a></li>
-    <li><a href="docs">docs</a></li>
-    <li><a href="intro">Bit About Me</a></li>
-    <li><a href="blog">Personal Blog</a></li>
-    </ul>
-</div>
 
 
 ## Check out my other pages
