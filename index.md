@@ -11,11 +11,6 @@ My academic interests include optimisation problems, linear statistical modellin
         <li><a href="intro">Bit About Me</a></li>
         <li><a href="blog">Personal Blog</a></li>
       </ul>
-
-      <form> <!-- 搜索栏是站点内导航的一个非线性的方式。 -->
-        <input type="text" class="search" name="q" placeholder="Search Content">
-        <input type="button" value="Search" name="" id="" class="btn">
-      </form>
 </nav>
 
 
@@ -33,11 +28,11 @@ In my personal columns at [Zhihu](https://www.zhihu.com/people/wang-yuan-chen-24
 
 ## Skills & Projects
 
-- Data Science tools: Excel, VBA, MySQL, R, Python, PowerBI, Tableau
-- Writing: LaTex, RMarkdown, HTML
-- Other tools: UiPath Studio, Simul8, Adobe Premier
-- Hobbies: Boxing/Muay Thai, Fitness, Hip Pop, Self-media creation, Yoyo, Wildlife Protection
-- Languages: Mandarin/Chinese (native), English (fluent), German (intermediate) and Cantonese (beginner)
+- **Data Science tools**: Excel, VBA, MySQL, R, Python, PowerBI, Tableau
+- **Writing**: LaTex, RMarkdown, HTML
+- **Other tools**: UiPath Studio, Simul8, Adobe Premier
+- **Hobbies**: Boxing/Muay Thai, Fitness, Hip Pop, Self-media creation, Yoyo, Wildlife Protection
+- **Languages**: Mandarin/Chinese (native), English (fluent), German (intermediate) and Cantonese (beginner)
 
 ## Contact me
 
