@@ -6,9 +6,8 @@
 
 <div class="menu">
     <ul>
-    <li><a href="index.html">我的英文页面</a></li>
-    <li><a href="intro.html">关于我</a></li>
-    <li><a href="blog.html">个人博客</a></li>
+    <li><a href="">我的英文页面</a></li>
+    <li><a href="academics">我的学术兴趣</a></li>
     </ul>
 </div>
 
