@@ -16,7 +16,8 @@ My academic interests include optimisation problems, linear statistical modellin
         <input type="search" name="q" placeholder="要搜索的内容">
         <input type="submit" value="搜索">
       </form>
-    </nav>
+</nav>
+
 
 <div class="menu">
     <ul>
