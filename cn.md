@@ -6,7 +6,7 @@
 
 <div class="menu">
     <ul>
-    <li><a href="">我的英文页面</a></li>
+    <li><a href="index">我的英文页面</a></li>
     <li><a href="academics">我的学术兴趣</a></li>
     </ul>
 </div>
