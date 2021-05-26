@@ -26,7 +26,7 @@
 
 ## 技能&工具
 
-- **Data Science**: Excel, VBA, MySQL, R, Python, PowerBI, Tableau, SQL
+- **Data Science**: Excel, VBA, MySQL, R, Python, PowerBI, Tableau
 - **Writing**: LaTex, Markdown, HTML
 - **Other tools**: UiPath Studio, Simul8, Adobe Premier
 - **Hobbies**: Boxing/Muay Thai, Fitness, Hip Pop, Photography, Yoyo, Wildlife Protection
