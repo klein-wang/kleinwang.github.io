@@ -26,11 +26,11 @@ In my personal columns at [Zhihu](https://www.zhihu.com/people/wang-yuan-chen-24
 
 ## Skills & Projects
 
-- **Data Science tools**: Excel, VBA, MySQL, R, Python, PowerBI, Tableau
-- **Writing**: LaTex, RMarkdown, HTML
+- **Data Science**: Excel, VBA, MySQL, R, Python, PowerBI, Tableau, SQL
+- **Writing**: LaTex, Markdown, HTML
 - **Other tools**: UiPath Studio, Simul8, Adobe Premier
-- **Hobbies**: Boxing/Muay Thai, Fitness, Hip Pop, Self-media creation, Yoyo, Wildlife Protection
-- **Languages**: Mandarin/Chinese (native), English (fluent), German (intermediate) and Cantonese (beginner)
+- **Hobbies**: Boxing/Muay Thai, Fitness, Hip Pop, Photography, Yoyo, Wildlife Protection
+- **Languages**: Mandarin, English, German and Cantonese
 
 ## Contact me
 
