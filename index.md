@@ -26,7 +26,7 @@ In my personal columns at [Zhihu](https://www.zhihu.com/people/wang-yuan-chen-24
 
 ## My skillset
 
-- **Data Science**: Excel, VBA, MySQL, R, Python, PowerBI, Tableau, SQL
+- **Data Science**: Excel, VBA, MySQL, R, Python, PowerBI, Tableau
 - **Writing**: LaTex, Markdown, HTML
 - **Other tools**: UiPath Studio, Simul8, Adobe Premier
 - **Hobbies**: Boxing/Muay Thai, Fitness, Hip Pop, Photography, Yoyo, Wildlife Protection
