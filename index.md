@@ -24,7 +24,7 @@ If you have found common interests in my introduction and you wish to read more,
 In my personal columns at [Zhihu](https://www.zhihu.com/people/wang-yuan-chen-24), I have been posting weekly articles about financial news and reading notes. I will publish my personal [reading list](https://zhuanlan.zhihu.com/p/366324411) every 6 months, in which I recommend 20 of my favorite books to you. 
 
 
-## Skills & Projects
+## My skillset
 
 - **Data Science**: Excel, VBA, MySQL, R, Python, PowerBI, Tableau, SQL
 - **Writing**: LaTex, Markdown, HTML
