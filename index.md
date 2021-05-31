@@ -8,6 +8,7 @@ My academic interests include optimisation problems, linear statistical modellin
       <ul>
         <li><a href="cn">我的中文页面</a></li>
         <li><a href="academics">Academic Interests</a></li>
+        <li><a href="newsroom">Newsroom</a></li>
       </ul>
 </nav>
 
