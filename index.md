@@ -1,6 +1,6 @@
 ## Welcome to My Channel
 
-My name is Klein, and I am currently working and studying in **finance** industry in Shanghai. Having a **statistical** academic background, I want to use this channel to share my personal insights as well as some small projects with you guys. 
+My name is Klein, and I am currently working and studying in **financial** sector in Shanghai. Having a **statistical** academic background, I want to use this channel to share my personal insights as well as some small projects with you guys. 
 
 I hope you all find the content useful and interpretable. I have put my contact info down below. Please feel free to reach me out for any further discussion on those topics. 
 
