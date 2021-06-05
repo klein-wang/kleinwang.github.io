@@ -9,7 +9,7 @@ I hope you all find the content useful and interpretable. I have put my contact 
       <ul>
         <li><a href="cn">我的中文页面</a></li>
         <li><a href="academics">Academic Interests</a></li>
-        <li><a href="newsroom">Newsroom</a></li>
+        <li><a href="news2021">Newsroom</a></li>
       </ul>
 </nav>
 
