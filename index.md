@@ -1,7 +1,8 @@
 ## Welcome to My Channel
 
-My name is Klein, and I am currently studying at the _University of Warwick_, under a 4-year MORSE program. 
-My academic interests include optimisation problems, linear statistical modelling and machine learning related to strategic investment. 
+My name is Klein, and I am currently working and studying in **finance** industry in Shanghai. Having a **statistical** academic background, I want to use this channel to share my personal insights as well as some small projects with you guys. 
+
+I hope you all find the content useful and interpretable. I have put my contact info down below. Please feel free to reach me out for any further discussion on those topics. 
 
 
 <nav> <!-- 本站统一的导航栏 -->
