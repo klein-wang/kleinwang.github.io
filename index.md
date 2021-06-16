@@ -35,10 +35,10 @@ In my personal columns at [Zhihu](https://www.zhihu.com/people/wang-yuan-chen-24
 
 ## My hobbies
 
-- Sports: Fitness, Boxing/Muay Thai, Badminton, Football, Yoyo
-- Arts: Hip Pop, Photography
-- Games: PUDG mobile, Pokémon, 21, Chess 
-- Others: Wildlife Protection, Volunteer
+- **Sports**: Fitness, Boxing/Muay Thai, Badminton, Football, Yoyo
+- **Arts**: Hip Pop, Photography
+- **Games**: PUDG mobile, Pokémon, 21, Chess 
+- **Others**: Wildlife Protection, Volunteer
 
 ## Contact me
 
