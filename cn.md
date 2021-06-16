@@ -30,8 +30,14 @@
 - **Data Science**: Excel, VBA, MySQL, R, Python, PowerBI, Tableau
 - **Writing**: LaTex, Markdown, HTML
 - **Other tools**: UiPath Studio, Simul8, Adobe Premier
-- **Hobbies**: Boxing/Muay Thai, Fitness, Hip Pop, Photography, Yoyo, Wildlife Protection
 - **Languages**: Mandarin, English, German and Cantonese
+
+## 我的爱好
+
+- 体育：健身、拳击/泰拳、羽毛球、足球、溜溜球
+- 艺术：Hip Pop，摄影
+- 游戏介绍：和平精英，口袋妖怪，21点，国际象棋
+- 其他：野生动物保护、志愿者
 
 ## 我的联系方式
 
