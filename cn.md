@@ -6,8 +6,9 @@
 
 <div class="menu">
     <ul>
-    <li><a href="index">我的英文页面</a></li>
-    <li><a href="academics">我的学术兴趣</a></li>
+    <li><a href="index">英文页面</a></li>
+    <li><a href="academics">学术兴趣</a></li>
+    <li><a href="journals">文献阅读</a></li>
     <li><a href="news2021">新闻演播室</a></li>
     </ul>
 </div>
