@@ -4,6 +4,9 @@ My name is Klein, and I am currently working and studying in **financial** secto
 
 I hope you all find the content useful and interpretable. I have put my contact info down below. Please feel free to reach me out for any further discussion on those topics. 
 
+<head>
+      <link rel=“shortcut icon” type=“image/x-icon” href=“favicon.ico”>
+</head>
 
 <nav> <!-- 本站统一的导航栏 -->
       <ul>
