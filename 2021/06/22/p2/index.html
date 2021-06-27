@@ -21,27 +21,44 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.5.0","exturl":false,"sidebar":{"position":"right","width":240,"display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="Welcome to My ChannelMy name is Klein, and I am currently working and studying in financial sector in Shanghai. Having a statistical academic background, I want to use this channel to share my persona">
+<meta name="description" content="In this work we propose PlanGAN, a model-based algorithm specifically designed for solving multi-goal tasks in environments with sparse rewards. Our method builds on the fact that any trajectory of ex">
 <meta property="og:type" content="article">
-<meta property="og:title" content="zero">
-<meta property="og:url" content="http://example.com/2021/06/25/index/index.html">
+<meta property="og:title" content="PlanGAN, Model-based Planning With Sparse Rewards and Multiple Goals">
+<meta property="og:url" content="http://example.com/2021/06/22/p2/index.html">
 <meta property="og:site_name" content="My Channel">
-<meta property="og:description" content="Welcome to My ChannelMy name is Klein, and I am currently working and studying in financial sector in Shanghai. Having a statistical academic background, I want to use this channel to share my persona">
+<meta property="og:description" content="In this work we propose PlanGAN, a model-based algorithm specifically designed for solving multi-goal tasks in environments with sparse rewards. Our method builds on the fact that any trajectory of ex">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-06-25T14:09:55.037Z">
-<meta property="article:modified_time" content="2021-06-27T06:41:07.934Z">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=s_t">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=g">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=s_%7Bt+1%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=g">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=(s_t,+a_t)">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=s_%7Bt+1%7D-s_t">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-e428832189cfaff49e0b58d32a048efe_1440w.jpg">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=g">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=g">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=(a%5Eq_t)%5EQ_%7Bq=1%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=n_i">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=a_t=%5Cfrac%7B%5Csum_%7Bi=1%7D%5E%7BR%7D%7Be%5E%7B%5Calpha+n_i%7D%5Calpha_i%7D%7D%7B%5Csum_%7Bj=1%7D%5E%7BQ%7D%7Be%5E%7B%5Calpha+n_i%7D%7D%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Calpha%3E0">
+<meta property="og:image" content="https://pic1.zhimg.com/80/v2-f6288903a114299b9de194b129be7598_1440w.jpg">
+<meta property="article:published_time" content="2021-06-22T13:40:20.000Z">
+<meta property="article:modified_time" content="2021-06-27T07:04:06.595Z">
 <meta property="article:author" content="Klein">
+<meta property="article:tag" content="Machine Learning">
+<meta property="article:tag" content="Reinforcement Learning">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.zhihu.com/equation?tex=s_t">
 
 
-<link rel="canonical" href="http://example.com/2021/06/25/index/">
+<link rel="canonical" href="http://example.com/2021/06/22/p2/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2021/06/25/index/","path":"2021/06/25/index/","title":"zero"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2021/06/22/p2/","path":"2021/06/22/p2/","title":"PlanGAN, Model-based Planning With Sparse Rewards and Multiple Goals"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>zero | My Channel</title>
+<title>PlanGAN, Model-based Planning With Sparse Rewards and Multiple Goals | My Channel</title>
   
 
 
@@ -148,7 +165,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Welcome-to-My-Channel"><span class="nav-number">1.</span> <span class="nav-text">Welcome to My Channel</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Check-out-my-other-pages"><span class="nav-number">2.</span> <span class="nav-text">Check out my other pages</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Abstract"><span class="nav-number">1.</span> <span class="nav-text">Abstract</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Introduction"><span class="nav-number">2.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Methodology"><span class="nav-number">3.</span> <span class="nav-text">Methodology</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -237,7 +254,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/25/index/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/22/p2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -250,7 +267,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          zero
+          PlanGAN, Model-based Planning With Sparse Rewards and Multiple Goals
         </h1>
 
         <div class="post-meta-container">
@@ -261,15 +278,28 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-06-25 22:09:55" itemprop="dateCreated datePublished" datetime="2021-06-25T22:09:55+08:00">2021-06-25</time>
+      <time title="Created: 2021-06-22 21:40:20" itemprop="dateCreated datePublished" datetime="2021-06-22T21:40:20+08:00">2021-06-22</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-06-27 14:41:07" itemprop="dateModified" datetime="2021-06-27T14:41:07+08:00">2021-06-27</time>
+        <time title="Modified: 2021-06-27 15:04:06" itemprop="dateModified" datetime="2021-06-27T15:04:06+08:00">2021-06-27</time>
       </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/academics/" itemprop="url" rel="index"><span itemprop="name">academics</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/academics/journal-review/" itemprop="url" rel="index"><span itemprop="name">journal review</span></a>
+        </span>
+    </span>
 
   
     <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv">
@@ -284,17 +314,18 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Symbols count in article: </span>
-      <span>766</span>
+      <span>3.5k</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>1 mins.</span>
+      <span>3 mins.</span>
     </span>
 </div>
 
+            <div class="post-description">In this work we propose PlanGAN, a model-based algorithm specifically designed for solving multi-goal tasks in environments with sparse rewards. Our method builds on the fact that any trajectory of experience collected by an agent contains useful information about how to achieve the goals observed during that trajectory.</div>
         </div>
       </header>
 
@@ -302,28 +333,20 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="Welcome-to-My-Channel"><a href="#Welcome-to-My-Channel" class="headerlink" title="Welcome to My Channel"></a>Welcome to My Channel</h2><p>My name is Klein, and I am currently working and studying in <strong>financial</strong> sector in Shanghai. Having a <strong>statistical</strong> academic background, I want to use this channel to share my personal insights as well as some small projects with you guys. </p>
-<p>Below I have attached several links to my other pages. Feel free to take a tour if you are interested in those topics. (Remember to access those links only at home page. Otherwise, the links won’t work as in the post.)</p>
-<div class="menu">
-    <ul>
-      <br>
-    <a href="cn">我的中文页面</a>
-      </br>
-          <br>
-    <a href="academics">Academic Interests</a>
-      </br>
-            <br>
-    <a href="journals">Scholarly Journals</a>
-            </br>
-            <br>
-    <a href="news2021">Newsroom</a>
-            </br>
-    </ul>
-</div>
-
-<h2 id="Check-out-my-other-pages"><a href="#Check-out-my-other-pages" class="headerlink" title="Check out my other pages"></a>Check out my other pages</h2><p>If you have found common interests in my introduction and you wish to read more, please check out my other pages below:</p>
-<p><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/yuanchen-klein-wang-87004a112/">LinkedIn</a> | <a target="_blank" rel="noopener" href="https://www.zhihu.com/people/wang-yuan-chen-24">Zhihu</a> | <a target="_blank" rel="noopener" href="https://www.douban.com/people/229534905/">Douban</a> | <a target="_blank" rel="noopener" href="https://space.bilibili.com/15471282">Bilibili</a></p>
-<p>In my personal columns at <a target="_blank" rel="noopener" href="https://www.zhihu.com/people/wang-yuan-chen-24/columns">Zhihu</a>, I have been posting weekly articles about financial news and reading notes. I will publish my personal <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/366324411">reading list</a> every 6 months, in which I recommend 20 of my favorite books to you. </p>
+        <p><em><strong>PlanGAN: Model-based Planning With Sparse Rewards and Multiple Goals</strong></em></p>
+<p>Authors: Henry Charlesworth, Giovanni Montana</p>
+<p>Link: <a href="https://link.zhihu.com/?target=https://arxiv.org/abs/2006.00900">https://arxiv.org/abs/2006.00900</a></p>
+<h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><blockquote>
+<p>Learning with sparse rewards remains a significant challenge in reinforcement learning (RL), especially when the aim is to train a policy capable of achieving multiple different goals. To date, the most successful approaches for dealing with multi-goal, sparse reward environments have been model-free RL algorithms. In this work we propose PlanGAN, a model-based algorithm specifically designed for solving multi-goal tasks in environments with sparse rewards. Our method builds on the fact that any trajectory of experience collected by an agent contains useful information about how to achieve the goals observed during that trajectory. We use this to train an ensemble of conditional generative models (GANs) to generate plausible trajectories that lead the agent from its current state towards a specified goal. We then combine these imagined trajectories into a novel planning algorithm in order to achieve the desired goal as efficiently as possible. The performance of PlanGAN has been tested on a number of robotic navigation/manipulation tasks in comparison with a range of model-free reinforcement learning baselines, including Hindsight Experience Replay. Our studies indicate that PlanGAN can achieve comparable performance whilst being around 4-8 times more sample efficient.</p>
+</blockquote>
+<h4 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h4><p>In this paper the authors present PlanGAN, a model-based algorithm that can naturally be applied to sparse reward environments with multiple goals. The core of this method builds upon the same principle that underlies HER — namely that any goal observed during a given trajectory can be used as an example of how to achieve that goal from states that occurred earlier on in that same trajectory. </p>
+<p>However, unlike HER, the algorithm does not directly learn a goal-conditioned policy/value function but rather train an ensemble of Generative Adversarial Networks (GANs) which learn to generate plausible future trajectories conditioned on achieving a particular goal. Then these imagined trajectories are combined into a novel planning algorithm that can reach those goals in an efficient manner.</p>
+<h4 id="Methodology"><a href="#Methodology" class="headerlink" title="Methodology"></a>Methodology</h4><p>The aim of the first major component of the methodology is to train a generative model that can take in the current state <img src="https://www.zhihu.com/equation?tex=s_t"> along with a desired goal <img src="https://www.zhihu.com/equation?tex=g"> and produce an imagined action at and next state <img src="https://www.zhihu.com/equation?tex=s_%7Bt+1%7D"> that moves the agent towards achieving <img src="https://www.zhihu.com/equation?tex=g"> .</p>
+<p>Intuitionally, the authors want to use the model to take a state-action pair <img src="https://www.zhihu.com/equation?tex=(s_t,+a_t)"> and predict the difference between the next state and current state, <img src="https://www.zhihu.com/equation?tex=s_%7Bt+1%7D-s_t"> . The predictive models in the paper are used to provide an L2 regularisation (Ridge) term in the generator loss that encourages the generated actions and next states to be consistent with the predictions of the one-step models. </p>
+<p><img src="https://pic3.zhimg.com/80/v2-e428832189cfaff49e0b58d32a048efe_1440w.jpg"></p>
+<p>The basic structure of the planner is to make use of a model to generate a number of imaginary future trajectories, score them, use these scores to choose the next action, and repeat this whole procedure at the next step. The score captures how effective those trajectories are in terms of moving towards the final goal <img src="https://www.zhihu.com/equation?tex=g"> . A good score here should reflect the fact that we want the next action to be moving us towards <img src="https://www.zhihu.com/equation?tex=g"> as quickly as possible whilst also ensuring that the goal can be retained at later time steps.</p>
+<p>Once these trajectories have been generated, the researchers give each of them a score based on the <em>fraction of time they spend achieving the goal</em>. This means that trajectories that reach the goal quickly are scored highly, but only if they are able to remain there. Accordingly, trajectories that do not reach the goal within T steps are given a score of zero. They can then score each of the initial actions <img src="https://www.zhihu.com/equation?tex=(a%5Eq_t)%5EQ_%7Bq=1%7D"> based on the average score of all the imagined trajectories that started with that action. These scores are normalised and denoted as <img src="https://www.zhihu.com/equation?tex=n_i"> . The final action returned by the planner is either the action with the maximum score or an exponentially weighted average of the initially proposed actions, <img src="https://www.zhihu.com/equation?tex=a_t=%5Cfrac%7B%5Csum_%7Bi=1%7D%5E%7BR%7D%7Be%5E%7B%5Calpha+n_i%7D%5Calpha_i%7D%7D%7B%5Csum_%7Bj=1%7D%5E%7BQ%7D%7Be%5E%7B%5Calpha+n_i%7D%7D%7D"> , where <img src="https://www.zhihu.com/equation?tex=%5Calpha%3E0"> is a hyperparameter. </p>
+<p><img src="https://pic1.zhimg.com/80/v2-f6288903a114299b9de194b129be7598_1440w.jpg"></p>
 
     </div>
 
@@ -363,16 +386,23 @@
   </div>
 </div>
 
+          <div class="post-tags">
+              <a href="/tags/Machine-Learning/" rel="tag"># Machine Learning</a>
+              <a href="/tags/Reinforcement-Learning/" rel="tag"># Reinforcement Learning</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/06/23/p3/" rel="prev" title="Credit Scoring via Logistic Regression">
-                  <i class="fa fa-chevron-left"></i> Credit Scoring via Logistic Regression
+                <a href="/2021/06/21/p1/" rel="prev" title="Hindsight Experience Replay">
+                  <i class="fa fa-chevron-left"></i> Hindsight Experience Replay
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2021/06/23/p3/" rel="next" title="Credit Scoring via Logistic Regression">
+                  Credit Scoring via Logistic Regression <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>

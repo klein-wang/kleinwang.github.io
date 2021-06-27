@@ -21,27 +21,39 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.5.0","exturl":false,"sidebar":{"position":"right","width":240,"display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="Welcome to My ChannelMy name is Klein, and I am currently working and studying in financial sector in Shanghai. Having a statistical academic background, I want to use this channel to share my persona">
+<meta name="description" content="Dealing with sparse rewards is one of the biggest challenges in Reinforcement Learning (RL). We present a novel technique called Hindsight Experience Replay which allows sample-efficient learning from">
 <meta property="og:type" content="article">
-<meta property="og:title" content="zero">
-<meta property="og:url" content="http://example.com/2021/06/25/index/index.html">
+<meta property="og:title" content="Hindsight Experience Replay">
+<meta property="og:url" content="http://example.com/2021/06/21/p1/index.html">
 <meta property="og:site_name" content="My Channel">
-<meta property="og:description" content="Welcome to My ChannelMy name is Klein, and I am currently working and studying in financial sector in Shanghai. Having a statistical academic background, I want to use this channel to share my persona">
+<meta property="og:description" content="Dealing with sparse rewards is one of the biggest challenges in Reinforcement Learning (RL). We present a novel technique called Hindsight Experience Replay which allows sample-efficient learning from">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-06-25T14:09:55.037Z">
-<meta property="article:modified_time" content="2021-06-27T06:41:07.934Z">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=S=(0,1)%5En">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=A=%7B0,1,...,n-1%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=r_g(s,a)=-%5Bs%5Cne+g%5D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=r_g(s,a)=-%7C%7Cs-g%7C%7C%5E2">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=g">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=s_T">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=r_k">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=a_k">
+<meta property="og:image" content="https://pic1.zhimg.com/80/v2-ff722eecbf0f8f8ef16586d10451d288_1440w.jpg">
+<meta property="article:published_time" content="2021-06-21T15:40:20.000Z">
+<meta property="article:modified_time" content="2021-06-27T07:03:42.731Z">
 <meta property="article:author" content="Klein">
+<meta property="article:tag" content="Machine Learning">
+<meta property="article:tag" content="Reinforcement Learning">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.zhihu.com/equation?tex=S=(0,1)%5En">
 
 
-<link rel="canonical" href="http://example.com/2021/06/25/index/">
+<link rel="canonical" href="http://example.com/2021/06/21/p1/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2021/06/25/index/","path":"2021/06/25/index/","title":"zero"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2021/06/21/p1/","path":"2021/06/21/p1/","title":"Hindsight Experience Replay"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>zero | My Channel</title>
+<title>Hindsight Experience Replay | My Channel</title>
   
 
 
@@ -148,7 +160,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Welcome-to-My-Channel"><span class="nav-number">1.</span> <span class="nav-text">Welcome to My Channel</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Check-out-my-other-pages"><span class="nav-number">2.</span> <span class="nav-text">Check out my other pages</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Abstract"><span class="nav-number">1.</span> <span class="nav-text">Abstract</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Introduction"><span class="nav-number">2.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-amp-Methodology"><span class="nav-number">3.</span> <span class="nav-text">Example &amp; Methodology</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -237,7 +249,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/25/index/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/21/p1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -250,7 +262,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          zero
+          Hindsight Experience Replay
         </h1>
 
         <div class="post-meta-container">
@@ -261,15 +273,28 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-06-25 22:09:55" itemprop="dateCreated datePublished" datetime="2021-06-25T22:09:55+08:00">2021-06-25</time>
+      <time title="Created: 2021-06-21 23:40:20" itemprop="dateCreated datePublished" datetime="2021-06-21T23:40:20+08:00">2021-06-21</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-06-27 14:41:07" itemprop="dateModified" datetime="2021-06-27T14:41:07+08:00">2021-06-27</time>
+        <time title="Modified: 2021-06-27 15:03:42" itemprop="dateModified" datetime="2021-06-27T15:03:42+08:00">2021-06-27</time>
       </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/academics/" itemprop="url" rel="index"><span itemprop="name">academics</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/academics/journal-review/" itemprop="url" rel="index"><span itemprop="name">journal review</span></a>
+        </span>
+    </span>
 
   
     <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv">
@@ -284,17 +309,18 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Symbols count in article: </span>
-      <span>766</span>
+      <span>4.2k</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>1 mins.</span>
+      <span>4 mins.</span>
     </span>
 </div>
 
+            <div class="post-description">Dealing with sparse rewards is one of the biggest challenges in Reinforcement Learning (RL). We present a novel technique called Hindsight Experience Replay which allows sample-efficient learning from rewards which are sparse and binary and therefore avoid the need for complicated reward engineering.</div>
         </div>
       </header>
 
@@ -302,28 +328,30 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="Welcome-to-My-Channel"><a href="#Welcome-to-My-Channel" class="headerlink" title="Welcome to My Channel"></a>Welcome to My Channel</h2><p>My name is Klein, and I am currently working and studying in <strong>financial</strong> sector in Shanghai. Having a <strong>statistical</strong> academic background, I want to use this channel to share my personal insights as well as some small projects with you guys. </p>
-<p>Below I have attached several links to my other pages. Feel free to take a tour if you are interested in those topics. (Remember to access those links only at home page. Otherwise, the links won’t work as in the post.)</p>
-<div class="menu">
-    <ul>
-      <br>
-    <a href="cn">我的中文页面</a>
-      </br>
-          <br>
-    <a href="academics">Academic Interests</a>
-      </br>
-            <br>
-    <a href="journals">Scholarly Journals</a>
-            </br>
-            <br>
-    <a href="news2021">Newsroom</a>
-            </br>
-    </ul>
-</div>
-
-<h2 id="Check-out-my-other-pages"><a href="#Check-out-my-other-pages" class="headerlink" title="Check out my other pages"></a>Check out my other pages</h2><p>If you have found common interests in my introduction and you wish to read more, please check out my other pages below:</p>
-<p><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/yuanchen-klein-wang-87004a112/">LinkedIn</a> | <a target="_blank" rel="noopener" href="https://www.zhihu.com/people/wang-yuan-chen-24">Zhihu</a> | <a target="_blank" rel="noopener" href="https://www.douban.com/people/229534905/">Douban</a> | <a target="_blank" rel="noopener" href="https://space.bilibili.com/15471282">Bilibili</a></p>
-<p>In my personal columns at <a target="_blank" rel="noopener" href="https://www.zhihu.com/people/wang-yuan-chen-24/columns">Zhihu</a>, I have been posting weekly articles about financial news and reading notes. I will publish my personal <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/366324411">reading list</a> every 6 months, in which I recommend 20 of my favorite books to you. </p>
+        <p><em><strong>Hindsight Experience Replay</strong></em></p>
+<p>Authors: Marcin Andrychowicz∗ , Filip Wolski, Alex Ray, Jonas Schneider, Rachel Fong, Peter Welinder, Bob McGrew, Josh Tobin, Pieter Abbeel† , Wojciech Zaremba†</p>
+<p>Link: <a href="https://link.zhihu.com/?target=https://arxiv.org/abs/1707.01495">https://arxiv.org/abs/1707.01495</a></p>
+<h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><blockquote>
+<p>Dealing with sparse rewards is one of the biggest challenges in Reinforcement Learning (RL). We present a novel technique called Hindsight Experience Replay which allows sample-efficient learning from rewards which are sparse and binary and therefore avoid the need for complicated reward engineering. It can be combined with an arbitrary off-policy RL algorithm and may be seen as a form of implicit curriculum. We demonstrate our approach on the task of manipulating objects with a robotic arm. In particular, we run experiments on three different tasks: pushing, sliding, and pick-and-place, in each case using only binary rewards indicating whether or not the task is completed. Our ablation studies show that Hindsight Experience Replay is a crucial ingredient which makes training possible in these challenging environments. We show that our policies trained on a physics simulation can be deployed on a physical robot and successfully complete the task. The video presenting our experiments is available at <a href="https://link.zhihu.com/?target=https://goo.gl/SMrQnI">https://goo.gl/SMrQnI</a>.</p>
+</blockquote>
+<h4 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h4><p>HER (Hindsight Experience Replay) is introduced to allow the algorithm to learn almost as much from achieving an undesired outcome as from the desired one, as humans do. Unlike the current generation of model-free RL algorithms, HER makes the learning possible even if the reward signal is unshaped (i.e. sparse and binary). </p>
+<p>In many cased of reinforcement learning, we often need to augment the reward using domain knowledge, in what is known as Reward Engineering or Reward Shaping. The problem here is that it is not always practically workable to discover the proper shaping for the reward functions. In other words, the domain knowledge required for strengthening learning is not always available. </p>
+<h4 id="Example-amp-Methodology"><a href="#Example-amp-Methodology" class="headerlink" title="Example &amp; Methodology"></a>Example &amp; Methodology</h4><p>In this paper, the authors have given out a motivating example, which asks us to consider a bit-flipping environment (page3) with state space <img src="https://www.zhihu.com/equation?tex=S=(0,1)%5En"> , action space <img src="https://www.zhihu.com/equation?tex=A=%7B0,1,...,n-1%7D">for some integer n in which executing the i-th action flips the i-th bit of the state. The policy gets a reward of -1 as long as it is not in the target state, i.e. <img src="https://www.zhihu.com/equation?tex=r_g(s,a)=-%5Bs%5Cne+g%5D"> . </p>
+<p>As mentioned in the example, a standard solution to this problem would be to use a shaped reward function which is more informative and guides the agent towards the goal, e.g. <img src="https://www.zhihu.com/equation?tex=r_g(s,a)=-%7C%7Cs-g%7C%7C%5E2"> . But this approach may be difficult to apply to more complicated problems (i.e. hard to capture the full information using shaped reward function like above). </p>
+<p>The second approach that has been raised is HER, which the reasoning is explained below:</p>
+<blockquote>
+<p>The pivotal idea behind our approach is to re-examine this trajectory with a different goal — while this trajectory may not help us learn how to achieve the state <img src="https://www.zhihu.com/equation?tex=g"> , it definitely tells us something about how to achieve the state <img src="https://www.zhihu.com/equation?tex=s_T">.</p>
+</blockquote>
+<p><strong>Off-Policy Learning</strong></p>
+<p>But how do human deal with such problem using HER? Sometimes when we fail to perform some tasks, we recognize that what we have done could be useful in another context, or for another task. It is the intuition that the authors of the paper used to develop their method. </p>
+<p>In HER, the authors suggest the following strategy: suppose our agent performs an episode of trying to reach goal state G from initial state S, but fails to do so and ends up in some state S’ at the end of the episode. We cache the trajectory into our replay buffer where <img src="https://www.zhihu.com/equation?tex=r_k">is the reward received at step k of the episode, and<img src="https://www.zhihu.com/equation?tex=a_k">is the action taken at step k of the episode.</p>
+<p>The idea in HER is to <strong>imagine that our goal has actually been S’ all along</strong>, and that in this alternative reality our agent has reached the goal successfully and got the positive reward for doing so.</p>
+<p>In addition to caching the real trajectory, we also cache the trajectory with imagined goal S’. This trajectory is motivated by the human ability to learn useful things from failed attempts. By introducing the imagined trajectories to our replay buffer, we ensure that<strong>no matter how bad our policy is, it will always have some positive rewards to learn from</strong>.</p>
+<p>The magic of function approximation by neural networks will ensure that our policy could also reach states similar to those it has seen before; this is the generalization property that is the hallmark of successful deep learning. At first, the agent will be able to reach states in a relatively small area around the initial state, but gradually it expands this reachable area of the state space until finally it learns to reach those goal states we are actually interested in.</p>
+<p><img src="https://pic1.zhimg.com/80/v2-ff722eecbf0f8f8ef16586d10451d288_1440w.jpg" alt="Pseudo Code of HER"></p>
+<blockquote>
+<p>HER may be seen as a form of implicit curriculum as the goals used for replay naturally shift from ones which are simple to achieve even by a random agent to more difficult ones. However, in contrast to explicit curriculum, HER does not require having any control over the distribution of initial environment states.</p>
+</blockquote>
 
     </div>
 
@@ -363,16 +391,23 @@
   </div>
 </div>
 
+          <div class="post-tags">
+              <a href="/tags/Machine-Learning/" rel="tag"># Machine Learning</a>
+              <a href="/tags/Reinforcement-Learning/" rel="tag"># Reinforcement Learning</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/06/23/p3/" rel="prev" title="Credit Scoring via Logistic Regression">
-                  <i class="fa fa-chevron-left"></i> Credit Scoring via Logistic Regression
+                <a href="/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/" rel="prev" title="Body Reform | 健身日志01">
+                  <i class="fa fa-chevron-left"></i> Body Reform | 健身日志01
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2021/06/22/p2/" rel="next" title="PlanGAN, Model-based Planning With Sparse Rewards and Multiple Goals">
+                  PlanGAN, Model-based Planning With Sparse Rewards and Multiple Goals <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
