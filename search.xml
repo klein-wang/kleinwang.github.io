@@ -22,10 +22,74 @@
     </ul>
 </div>
 
-<h2 id="Check-out-my-other-pages"><a href="#Check-out-my-other-pages" class="headerlink" title="Check out my other pages"></a>Check out my other pages</h2><p>If you have found common interests in my introduction and you wish to read more, please check out my other pages below:</p>
-<p><a href="https://www.linkedin.com/in/yuanchen-klein-wang-87004a112/">LinkedIn</a> | <a href="https://www.zhihu.com/people/wang-yuan-chen-24">Zhihu</a> | <a href="https://www.douban.com/people/229534905/">Douban</a> | <a href="https://space.bilibili.com/15471282">Bilibili</a></p>
 <p>In my personal columns at <a href="https://www.zhihu.com/people/wang-yuan-chen-24/columns">Zhihu</a>, I have been posting weekly articles about financial news and reading notes. I will publish my personal <a href="https://zhuanlan.zhihu.com/p/366324411">reading list</a> every 6 months, in which I recommend 20 of my favorite books to you. </p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Body Reform | 健身日志01</title>
+    <url>/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/</url>
+    <content><![CDATA[<blockquote>
+<p>Train like a Spartan.</p>
+</blockquote>
+<p>第一次尝试以文字的形式来记录下自己日常健身时的训练内容，希望可以不断改善自己的训练计划，找到最适合自己的生活方式。</p>
+<p>运动期间我每日的热量大概在1800千卡左右，宏观营养摄入量如下：</p>
+<ul>
+<li>脂肪 37-45g</li>
+<li>蛋白质 104-127g</li>
+<li>碳水 229-280g</li>
+</ul>
+<p>这次的日志记录了4月末为期10天（4/21-4/30）的训练内容，平均下来一周每个肌群会训练1到2次。由于我自己的体脂含量偏高，所以力量训练结束后会进行30min左右的有氧，来加速身体内脂肪的燃烧。</p>
+<img src="/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/1.jpg" class="">
+
+<img src="/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/2.jpg" class="">
+
+<img src="/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/3.jpg" class="">
+
+<p>运动带给我们的好处非常之多，无论背后的目标是减脂、增肌、身体塑性或是长久形成的生活习惯，都可以借由社交平台一起来探讨训练内外的各种心得和知识。之后的内容会继续从饮食、睡眠、训练、心态等等的角度来记录健身日常，喜欢的小伙伴欢迎点赞支持一下哟，一起自律打卡。</p>
+]]></content>
+      <categories>
+        <category>hobbies</category>
+      </categories>
+      <tags>
+        <tag>training</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hindsight Experience Replay</title>
+    <url>/2021/06/21/p1/</url>
+    <content><![CDATA[<p><em><strong>Hindsight Experience Replay</strong></em></p>
+<p>Authors: Marcin Andrychowicz∗ , Filip Wolski, Alex Ray, Jonas Schneider, Rachel Fong, Peter Welinder, Bob McGrew, Josh Tobin, Pieter Abbeel† , Wojciech Zaremba†</p>
+<p>Link: <a href="https://link.zhihu.com/?target=https://arxiv.org/abs/1707.01495">https://arxiv.org/abs/1707.01495</a></p>
+<h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><blockquote>
+<p>Dealing with sparse rewards is one of the biggest challenges in Reinforcement Learning (RL). We present a novel technique called Hindsight Experience Replay which allows sample-efficient learning from rewards which are sparse and binary and therefore avoid the need for complicated reward engineering. It can be combined with an arbitrary off-policy RL algorithm and may be seen as a form of implicit curriculum. We demonstrate our approach on the task of manipulating objects with a robotic arm. In particular, we run experiments on three different tasks: pushing, sliding, and pick-and-place, in each case using only binary rewards indicating whether or not the task is completed. Our ablation studies show that Hindsight Experience Replay is a crucial ingredient which makes training possible in these challenging environments. We show that our policies trained on a physics simulation can be deployed on a physical robot and successfully complete the task. The video presenting our experiments is available at <a href="https://link.zhihu.com/?target=https://goo.gl/SMrQnI">https://goo.gl/SMrQnI</a>.</p>
+</blockquote>
+<h4 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h4><p>HER (Hindsight Experience Replay) is introduced to allow the algorithm to learn almost as much from achieving an undesired outcome as from the desired one, as humans do. Unlike the current generation of model-free RL algorithms, HER makes the learning possible even if the reward signal is unshaped (i.e. sparse and binary). </p>
+<p>In many cased of reinforcement learning, we often need to augment the reward using domain knowledge, in what is known as Reward Engineering or Reward Shaping. The problem here is that it is not always practically workable to discover the proper shaping for the reward functions. In other words, the domain knowledge required for strengthening learning is not always available. </p>
+<h4 id="Example-amp-Methodology"><a href="#Example-amp-Methodology" class="headerlink" title="Example &amp; Methodology"></a>Example &amp; Methodology</h4><p>In this paper, the authors have given out a motivating example, which asks us to consider a bit-flipping environment (page3) with state space <img src="https://www.zhihu.com/equation?tex=S=(0,1)%5En"> , action space <img src="https://www.zhihu.com/equation?tex=A=%7B0,1,...,n-1%7D">for some integer n in which executing the i-th action flips the i-th bit of the state. The policy gets a reward of -1 as long as it is not in the target state, i.e. <img src="https://www.zhihu.com/equation?tex=r_g(s,a)=-%5Bs%5Cne+g%5D"> . </p>
+<p>As mentioned in the example, a standard solution to this problem would be to use a shaped reward function which is more informative and guides the agent towards the goal, e.g. <img src="https://www.zhihu.com/equation?tex=r_g(s,a)=-%7C%7Cs-g%7C%7C%5E2"> . But this approach may be difficult to apply to more complicated problems (i.e. hard to capture the full information using shaped reward function like above). </p>
+<p>The second approach that has been raised is HER, which the reasoning is explained below:</p>
+<blockquote>
+<p>The pivotal idea behind our approach is to re-examine this trajectory with a different goal — while this trajectory may not help us learn how to achieve the state <img src="https://www.zhihu.com/equation?tex=g"> , it definitely tells us something about how to achieve the state <img src="https://www.zhihu.com/equation?tex=s_T">.</p>
+</blockquote>
+<p><strong>Off-Policy Learning</strong></p>
+<p>But how do human deal with such problem using HER? Sometimes when we fail to perform some tasks, we recognize that what we have done could be useful in another context, or for another task. It is the intuition that the authors of the paper used to develop their method. </p>
+<p>In HER, the authors suggest the following strategy: suppose our agent performs an episode of trying to reach goal state G from initial state S, but fails to do so and ends up in some state S’ at the end of the episode. We cache the trajectory into our replay buffer where <img src="https://www.zhihu.com/equation?tex=r_k">is the reward received at step k of the episode, and<img src="https://www.zhihu.com/equation?tex=a_k">is the action taken at step k of the episode.</p>
+<p>The idea in HER is to <strong>imagine that our goal has actually been S’ all along</strong>, and that in this alternative reality our agent has reached the goal successfully and got the positive reward for doing so.</p>
+<p>In addition to caching the real trajectory, we also cache the trajectory with imagined goal S’. This trajectory is motivated by the human ability to learn useful things from failed attempts. By introducing the imagined trajectories to our replay buffer, we ensure that<strong>no matter how bad our policy is, it will always have some positive rewards to learn from</strong>.</p>
+<p>The magic of function approximation by neural networks will ensure that our policy could also reach states similar to those it has seen before; this is the generalization property that is the hallmark of successful deep learning. At first, the agent will be able to reach states in a relatively small area around the initial state, but gradually it expands this reachable area of the state space until finally it learns to reach those goal states we are actually interested in.</p>
+<p><img src="https://pic1.zhimg.com/80/v2-ff722eecbf0f8f8ef16586d10451d288_1440w.jpg" alt="Pseudo Code of HER"></p>
+<blockquote>
+<p>HER may be seen as a form of implicit curriculum as the goals used for replay naturally shift from ones which are simple to achieve even by a random agent to more difficult ones. However, in contrast to explicit curriculum, HER does not require having any control over the distribution of initial environment states.</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>academics</category>
+        <category>journal review</category>
+      </categories>
+      <tags>
+        <tag>Machine Learning</tag>
+        <tag>Reinforcement Learning</tag>
+      </tags>
   </entry>
   <entry>
     <title>Credit Scoring via Logistic Regression</title>
@@ -97,72 +161,6 @@
       <tags>
         <tag>Machine Learning</tag>
         <tag>Reinforcement Learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hindsight Experience Replay</title>
-    <url>/2021/06/21/p1/</url>
-    <content><![CDATA[<p><em><strong>Hindsight Experience Replay</strong></em></p>
-<p>Authors: Marcin Andrychowicz∗ , Filip Wolski, Alex Ray, Jonas Schneider, Rachel Fong, Peter Welinder, Bob McGrew, Josh Tobin, Pieter Abbeel† , Wojciech Zaremba†</p>
-<p>Link: <a href="https://link.zhihu.com/?target=https://arxiv.org/abs/1707.01495">https://arxiv.org/abs/1707.01495</a></p>
-<h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><blockquote>
-<p>Dealing with sparse rewards is one of the biggest challenges in Reinforcement Learning (RL). We present a novel technique called Hindsight Experience Replay which allows sample-efficient learning from rewards which are sparse and binary and therefore avoid the need for complicated reward engineering. It can be combined with an arbitrary off-policy RL algorithm and may be seen as a form of implicit curriculum. We demonstrate our approach on the task of manipulating objects with a robotic arm. In particular, we run experiments on three different tasks: pushing, sliding, and pick-and-place, in each case using only binary rewards indicating whether or not the task is completed. Our ablation studies show that Hindsight Experience Replay is a crucial ingredient which makes training possible in these challenging environments. We show that our policies trained on a physics simulation can be deployed on a physical robot and successfully complete the task. The video presenting our experiments is available at <a href="https://link.zhihu.com/?target=https://goo.gl/SMrQnI">https://goo.gl/SMrQnI</a>.</p>
-</blockquote>
-<h4 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h4><p>HER (Hindsight Experience Replay) is introduced to allow the algorithm to learn almost as much from achieving an undesired outcome as from the desired one, as humans do. Unlike the current generation of model-free RL algorithms, HER makes the learning possible even if the reward signal is unshaped (i.e. sparse and binary). </p>
-<p>In many cased of reinforcement learning, we often need to augment the reward using domain knowledge, in what is known as Reward Engineering or Reward Shaping. The problem here is that it is not always practically workable to discover the proper shaping for the reward functions. In other words, the domain knowledge required for strengthening learning is not always available. </p>
-<h4 id="Example-amp-Methodology"><a href="#Example-amp-Methodology" class="headerlink" title="Example &amp; Methodology"></a>Example &amp; Methodology</h4><p>In this paper, the authors have given out a motivating example, which asks us to consider a bit-flipping environment (page3) with state space <img src="https://www.zhihu.com/equation?tex=S=(0,1)%5En"> , action space <img src="https://www.zhihu.com/equation?tex=A=%7B0,1,...,n-1%7D">for some integer n in which executing the i-th action flips the i-th bit of the state. The policy gets a reward of -1 as long as it is not in the target state, i.e. <img src="https://www.zhihu.com/equation?tex=r_g(s,a)=-%5Bs%5Cne+g%5D"> . </p>
-<p>As mentioned in the example, a standard solution to this problem would be to use a shaped reward function which is more informative and guides the agent towards the goal, e.g. <img src="https://www.zhihu.com/equation?tex=r_g(s,a)=-%7C%7Cs-g%7C%7C%5E2"> . But this approach may be difficult to apply to more complicated problems (i.e. hard to capture the full information using shaped reward function like above). </p>
-<p>The second approach that has been raised is HER, which the reasoning is explained below:</p>
-<blockquote>
-<p>The pivotal idea behind our approach is to re-examine this trajectory with a different goal — while this trajectory may not help us learn how to achieve the state <img src="https://www.zhihu.com/equation?tex=g"> , it definitely tells us something about how to achieve the state <img src="https://www.zhihu.com/equation?tex=s_T">.</p>
-</blockquote>
-<p><strong>Off-Policy Learning</strong></p>
-<p>But how do human deal with such problem using HER? Sometimes when we fail to perform some tasks, we recognize that what we have done could be useful in another context, or for another task. It is the intuition that the authors of the paper used to develop their method. </p>
-<p>In HER, the authors suggest the following strategy: suppose our agent performs an episode of trying to reach goal state G from initial state S, but fails to do so and ends up in some state S’ at the end of the episode. We cache the trajectory into our replay buffer where <img src="https://www.zhihu.com/equation?tex=r_k">is the reward received at step k of the episode, and<img src="https://www.zhihu.com/equation?tex=a_k">is the action taken at step k of the episode.</p>
-<p>The idea in HER is to <strong>imagine that our goal has actually been S’ all along</strong>, and that in this alternative reality our agent has reached the goal successfully and got the positive reward for doing so.</p>
-<p>In addition to caching the real trajectory, we also cache the trajectory with imagined goal S’. This trajectory is motivated by the human ability to learn useful things from failed attempts. By introducing the imagined trajectories to our replay buffer, we ensure that<strong>no matter how bad our policy is, it will always have some positive rewards to learn from</strong>.</p>
-<p>The magic of function approximation by neural networks will ensure that our policy could also reach states similar to those it has seen before; this is the generalization property that is the hallmark of successful deep learning. At first, the agent will be able to reach states in a relatively small area around the initial state, but gradually it expands this reachable area of the state space until finally it learns to reach those goal states we are actually interested in.</p>
-<p><img src="https://pic1.zhimg.com/80/v2-ff722eecbf0f8f8ef16586d10451d288_1440w.jpg" alt="Pseudo Code of HER"></p>
-<blockquote>
-<p>HER may be seen as a form of implicit curriculum as the goals used for replay naturally shift from ones which are simple to achieve even by a random agent to more difficult ones. However, in contrast to explicit curriculum, HER does not require having any control over the distribution of initial environment states.</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>academics</category>
-        <category>journal review</category>
-      </categories>
-      <tags>
-        <tag>Machine Learning</tag>
-        <tag>Reinforcement Learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Body Reform | 健身日志01</title>
-    <url>/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/</url>
-    <content><![CDATA[<blockquote>
-<p>Train like a Spartan.</p>
-</blockquote>
-<p>第一次尝试以文字的形式来记录下自己日常健身时的训练内容，希望可以不断改善自己的训练计划，找到最适合自己的生活方式。</p>
-<p>运动期间我每日的热量大概在1800千卡左右，宏观营养摄入量如下：</p>
-<ul>
-<li>脂肪 37-45g</li>
-<li>蛋白质 104-127g</li>
-<li>碳水 229-280g</li>
-</ul>
-<p>这次的日志记录了4月末为期10天（4/21-4/30）的训练内容，平均下来一周每个肌群会训练1到2次。由于我自己的体脂含量偏高，所以力量训练结束后会进行30min左右的有氧，来加速身体内脂肪的燃烧。</p>
-<img src="/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/1.jpg" class="">
-
-<img src="/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/2.jpg" class="">
-
-<img src="/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/3.jpg" class="">
-
-<p>运动带给我们的好处非常之多，无论背后的目标是减脂、增肌、身体塑性或是长久形成的生活习惯，都可以借由社交平台一起来探讨训练内外的各种心得和知识。之后的内容会继续从饮食、睡眠、训练、心态等等的角度来记录健身日常，喜欢的小伙伴欢迎点赞支持一下哟，一起自律打卡。</p>
-]]></content>
-      <categories>
-        <category>hobbies</category>
-      </categories>
-      <tags>
-        <tag>training</tag>
       </tags>
   </entry>
 </search>
