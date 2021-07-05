@@ -26,25 +26,23 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Body Reform | 健身日志01</title>
-    <url>/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/</url>
+    <title>Body Reform | 健身日志02</title>
+    <url>/2021/07/05/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9702/</url>
     <content><![CDATA[<blockquote>
 <p>Train like a Spartan.</p>
 </blockquote>
-<p>第一次尝试以文字的形式来记录下自己日常健身时的训练内容，希望可以不断改善自己的训练计划，找到最适合自己的生活方式。</p>
-<p>运动期间我每日的热量大概在1800千卡左右，宏观营养摄入量如下：</p>
-<ul>
-<li>脂肪 37-45g</li>
-<li>蛋白质 104-127g</li>
-<li>碳水 229-280g</li>
-</ul>
-<p>这次的日志记录了4月末为期10天（4/21-4/30）的训练内容，平均下来一周每个肌群会训练1到2次。由于我自己的体脂含量偏高，所以力量训练结束后会进行30min左右的有氧，来加速身体内脂肪的燃烧。</p>
-<img src="/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/1.jpg" class="">
+<p>4月末之后就基本以居家健身为主，力量训练都是借用哑铃来完成。</p>
+<p>和4月的健身计划相比，6月我开始加大了有氧的训练量，总共完成了103km的跑量。在饮食上也适当放宽了碳水的摄入量，从而来维持同等强度的力量训练。</p>
+<img src="/2021/07/05/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9702/3.png" class="" title="Keep跑步">
 
-<img src="/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/2.jpg" class="">
+<p>这次的日志记录了6月末为期10天的训练内容，平均下来每周会训练腹部、手臂、肩膀和背部肌群2次，腿部肌肉没有特别训练，主要通过有氧跑步时的变速跑和HIIT中的多种复合型跳跃动作来刺激肌群。</p>
+<img src="/2021/07/05/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9702/1.png" class="">
 
-<img src="/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/3.jpg" class="">
+<img src="/2021/07/05/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9702/2.png" class="">
 
+<p>整体来看跑步时的心肺得到了不小的提升，腿部的肌肉也没有刚开始跑步那样酸痛。运动前后的热身与拉伸也花了更长的时间去完成，充分地去调动和放松训练的肌群。</p>
+<p>希望7月可以继续维持现有的有氧量，适当提升下配速。在饮食上继续控制糖分的摄入，加强对于脂肪摄入的控制。</p>
+<hr>
 <p>运动带给我们的好处非常之多，无论背后的目标是减脂、增肌、身体塑性或是长久形成的生活习惯，都可以借由社交平台一起来探讨训练内外的各种心得和知识。之后的内容会继续从饮食、睡眠、训练、心态等等的角度来记录健身日常，喜欢的小伙伴欢迎点赞支持一下哟，一起自律打卡。</p>
 ]]></content>
       <categories>
@@ -52,115 +50,6 @@
       </categories>
       <tags>
         <tag>training</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hindsight Experience Replay</title>
-    <url>/2021/06/21/p1/</url>
-    <content><![CDATA[<p><em><strong>Hindsight Experience Replay</strong></em></p>
-<p>Authors: Marcin Andrychowicz∗ , Filip Wolski, Alex Ray, Jonas Schneider, Rachel Fong, Peter Welinder, Bob McGrew, Josh Tobin, Pieter Abbeel† , Wojciech Zaremba†</p>
-<p>Link: <a href="https://link.zhihu.com/?target=https://arxiv.org/abs/1707.01495">https://arxiv.org/abs/1707.01495</a></p>
-<h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><blockquote>
-<p>Dealing with sparse rewards is one of the biggest challenges in Reinforcement Learning (RL). We present a novel technique called Hindsight Experience Replay which allows sample-efficient learning from rewards which are sparse and binary and therefore avoid the need for complicated reward engineering. It can be combined with an arbitrary off-policy RL algorithm and may be seen as a form of implicit curriculum. We demonstrate our approach on the task of manipulating objects with a robotic arm. In particular, we run experiments on three different tasks: pushing, sliding, and pick-and-place, in each case using only binary rewards indicating whether or not the task is completed. Our ablation studies show that Hindsight Experience Replay is a crucial ingredient which makes training possible in these challenging environments. We show that our policies trained on a physics simulation can be deployed on a physical robot and successfully complete the task. The video presenting our experiments is available at <a href="https://link.zhihu.com/?target=https://goo.gl/SMrQnI">https://goo.gl/SMrQnI</a>.</p>
-</blockquote>
-<h4 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h4><p>HER (Hindsight Experience Replay) is introduced to allow the algorithm to learn almost as much from achieving an undesired outcome as from the desired one, as humans do. Unlike the current generation of model-free RL algorithms, HER makes the learning possible even if the reward signal is unshaped (i.e. sparse and binary). </p>
-<p>In many cased of reinforcement learning, we often need to augment the reward using domain knowledge, in what is known as Reward Engineering or Reward Shaping. The problem here is that it is not always practically workable to discover the proper shaping for the reward functions. In other words, the domain knowledge required for strengthening learning is not always available. </p>
-<h4 id="Example-amp-Methodology"><a href="#Example-amp-Methodology" class="headerlink" title="Example &amp; Methodology"></a>Example &amp; Methodology</h4><p>In this paper, the authors have given out a motivating example, which asks us to consider a bit-flipping environment (page3) with state space <img src="https://www.zhihu.com/equation?tex=S=(0,1)%5En"> , action space <img src="https://www.zhihu.com/equation?tex=A=%7B0,1,...,n-1%7D">for some integer n in which executing the i-th action flips the i-th bit of the state. The policy gets a reward of -1 as long as it is not in the target state, i.e. <img src="https://www.zhihu.com/equation?tex=r_g(s,a)=-%5Bs%5Cne+g%5D"> . </p>
-<p>As mentioned in the example, a standard solution to this problem would be to use a shaped reward function which is more informative and guides the agent towards the goal, e.g. <img src="https://www.zhihu.com/equation?tex=r_g(s,a)=-%7C%7Cs-g%7C%7C%5E2"> . But this approach may be difficult to apply to more complicated problems (i.e. hard to capture the full information using shaped reward function like above). </p>
-<p>The second approach that has been raised is HER, which the reasoning is explained below:</p>
-<blockquote>
-<p>The pivotal idea behind our approach is to re-examine this trajectory with a different goal — while this trajectory may not help us learn how to achieve the state <img src="https://www.zhihu.com/equation?tex=g"> , it definitely tells us something about how to achieve the state <img src="https://www.zhihu.com/equation?tex=s_T">.</p>
-</blockquote>
-<p><strong>Off-Policy Learning</strong></p>
-<p>But how do human deal with such problem using HER? Sometimes when we fail to perform some tasks, we recognize that what we have done could be useful in another context, or for another task. It is the intuition that the authors of the paper used to develop their method. </p>
-<p>In HER, the authors suggest the following strategy: suppose our agent performs an episode of trying to reach goal state G from initial state S, but fails to do so and ends up in some state S’ at the end of the episode. We cache the trajectory into our replay buffer where <img src="https://www.zhihu.com/equation?tex=r_k">is the reward received at step k of the episode, and<img src="https://www.zhihu.com/equation?tex=a_k">is the action taken at step k of the episode.</p>
-<p>The idea in HER is to <strong>imagine that our goal has actually been S’ all along</strong>, and that in this alternative reality our agent has reached the goal successfully and got the positive reward for doing so.</p>
-<p>In addition to caching the real trajectory, we also cache the trajectory with imagined goal S’. This trajectory is motivated by the human ability to learn useful things from failed attempts. By introducing the imagined trajectories to our replay buffer, we ensure that<strong>no matter how bad our policy is, it will always have some positive rewards to learn from</strong>.</p>
-<p>The magic of function approximation by neural networks will ensure that our policy could also reach states similar to those it has seen before; this is the generalization property that is the hallmark of successful deep learning. At first, the agent will be able to reach states in a relatively small area around the initial state, but gradually it expands this reachable area of the state space until finally it learns to reach those goal states we are actually interested in.</p>
-<p><img src="https://pic1.zhimg.com/80/v2-ff722eecbf0f8f8ef16586d10451d288_1440w.jpg" alt="Pseudo Code of HER"></p>
-<blockquote>
-<p>HER may be seen as a form of implicit curriculum as the goals used for replay naturally shift from ones which are simple to achieve even by a random agent to more difficult ones. However, in contrast to explicit curriculum, HER does not require having any control over the distribution of initial environment states.</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>academics</category>
-        <category>journal review</category>
-      </categories>
-      <tags>
-        <tag>Machine Learning</tag>
-        <tag>Reinforcement Learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Credit Scoring via Logistic Regression</title>
-    <url>/2021/06/23/p3/</url>
-    <content><![CDATA[<p><em><strong>Credit Scoring via Logistic Regression</strong></em></p>
-<p>Author: Ali Al-Arad</p>
-<p>Link: <a href="https://link.zhihu.com/?target=http://utstat.toronto.edu/~ali/papers/creditworthinessProject.pdf">http://utstat.toronto.edu/~ali/papers/creditworthinessProject.pdf</a></p>
-<h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><blockquote>
-<p>The goal of credit scoring models is to predict the creditworthiness of a customer and determine whether they will be able to meet a given financial obligation or default on it. Such models allow a financial institution to minimize the risk of loss by setting decision rules regarding which customers receive loan and credit card approvals. Logistic regression can be used to predict default events and model the influence of different variables on a consumer’s creditworthiness. In this paper we use a logistic regression model to predict the creditworthiness of bank customers using predictors related to their personal status and financial history. Model adequacy and robustness checks are performed to ensure that the model is being properly fitted and interpreted.</p>
-</blockquote>
-<h4 id="Dataset"><a href="#Dataset" class="headerlink" title="Dataset"></a>Dataset</h4><p>The data set used is the German Credit dataset obtained from the UCI machine-learning data archive and includes 20 covariates (7 numerical, 13 categorical) and 1000 observations. Each observation represents an individual customer with the response indicating their actual classification (1 = “Good” or 0 = “Bad”). </p>
-<p>For the purpose of this paper, 5 major predictors have been selected to build on the logistic model. The predictors cover financial, living and social indicators. </p>
-<p><img src="https://pic3.zhimg.com/80/v2-c3989f3d6ce654878902a3a1f6605c06_1440w.jpg"></p>
-<h4 id="Introduction-amp-Modelling"><a href="#Introduction-amp-Modelling" class="headerlink" title="Introduction &amp; Modelling"></a>Introduction &amp; Modelling</h4><p>In this paper, a binary logistic model is fitted to the data, using the logit link function. In other words, the classification of the <img src="https://www.zhihu.com/equation?tex=i_%7Bth%7D"> customer as having good or bad creditability is modeled using a Bernoulli random variable:</p>
-<p><img src="https://www.zhihu.com/equation?tex=Y_i=%5Cleft%5C%7B+%5Cbegin%7Baligned%7D+1+&+,+&+%5Cmbox%7Bif+the+customer+is+creditworthy%7D+%5C%5C+0+&+,+&+%5Cmbox%7Botherwise%7D+%5Cend%7Baligned%7D+%5Cright."></p>
-<p>with conditional probabilities <img src="https://www.zhihu.com/equation?tex=P(Y_i=1%7Cx_i)=%5Cpi_i"> and <img src="https://www.zhihu.com/equation?tex=P(Y_i=0%7Cx_i)=1-%5Cpi_i">. </p>
-<p>The conditional expectation is the given by: <img src="https://www.zhihu.com/equation?tex=E(Y_i%7Cx_i)=P(Y_i=1%7Cx_i)%5Ctimes+1+P(Y_i=0%7Cx_i)%5Ctimes+0=%5Cpi_i"> . </p>
-<p>The link function is essentially transferring the predicted probability into a more interpretable indicator which in this case is odds ratio: </p>
-<p>logit <img src="https://www.zhihu.com/equation?tex=%5Cpi_i=%5Clog(%5Cfrac%7B%5Cpi_i%7D%7B1-%5Cpi_i%7D)=x_i%5E%7B%27%7D%5Cbeta=%5Ceta_i"></p>
-<p>The estimation is performed by iterative weighted least squares (IWLS). </p>
-<h4 id="Model-Adequacy"><a href="#Model-Adequacy" class="headerlink" title="Model Adequacy"></a>Model Adequacy</h4><p>In terms of model validation, the author first tested on the significance of the deviance reduction, which suggest weak evidence against the model/link given large p-value. Since the Pearson chi-square statistic or the deviance likelihood ratio test are not informative, Hosmer Lemeshow Test was performed to further compare the test statistic of observations in g categories to a <img src="https://www.zhihu.com/equation?tex=%5Cchi%5E2_%7Bg-2%7D"> distribution. Similar result was given.</p>
-<h4 id="Outlier-detection"><a href="#Outlier-detection" class="headerlink" title="Outlier detection"></a>Outlier detection</h4><p>In this paper, Cook’s Distance was used to plot the observations and identified three outliers in the data set. Comparing original model with a second model by removing those three cases to study their impact on the estimation and conclusions, the author has found that removal of those cases does not lead to noticeable changes in estimated parameters. </p>
-<h4 id="Robustness-Checks"><a href="#Robustness-Checks" class="headerlink" title="Robustness Checks"></a>Robustness Checks</h4><p>An alternative model is fit using aggregated data, to see if the conclusions of these models agree with those of the original model. By grouping the covariate data prior to aggregation, a smaller range of covariate patterns (i.e. collinearity) would be achieved. In particular, the categories of 4 factor variables have been more general, including history, duration, marital status and purpose. Based on Likelihood ratio test, the results agree with those of the original model. The exceptions are that when gender and status are considered separately, they are not significant variables, and purpose is also insignificant at 95% significance level. </p>
-<p><img src="https://pic4.zhimg.com/80/v2-0330cb83f1e1dd922a9435e1d9f06ab7_1440w.jpg"></p>
-<h4 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h4><p>The main findings of statistical analysis are as follows:</p>
-<ul>
-<li>Odds of a consumer’s creditworthiness increase with an increase in the size of their checking account.</li>
-<li>Odds of a consumer’s creditworthiness is 1.636 times greater when he is a single male than who being divorced/married females. </li>
-<li>Odds of a consumer’s creditworthiness with a purpose of car is likely to be the greatest.</li>
-<li>Increased duration decreases the odds of creditworthiness.</li>
-<li>Consumers with “critical” credit history show large increases in expected odds of creditworthiness. In other words, the result suggests that consumers with worse credit history are less likely to default. It is very important that author has given out two possible explanations:</li>
-</ul>
-<ol>
-<li>The bank may be more stringent when it comes to loaning a consumer with bad credit history, whereas consumers with good credit history do not face the same kind of scrutiny and may end up being issued a loan they eventually cannot repay.</li>
-<li>An alternative explanation is that there may be a data issue in which the categories were incorrectly labeled. It would be best to be cautious with the interpretation of this result.</li>
-</ol>
-]]></content>
-      <categories>
-        <category>academics</category>
-        <category>journal review</category>
-      </categories>
-      <tags>
-        <tag>Statistics</tag>
-        <tag>Finance</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PlanGAN, Model-based Planning With Sparse Rewards and Multiple Goals</title>
-    <url>/2021/06/22/p2/</url>
-    <content><![CDATA[<p><em><strong>PlanGAN: Model-based Planning With Sparse Rewards and Multiple Goals</strong></em></p>
-<p>Authors: Henry Charlesworth, Giovanni Montana</p>
-<p>Link: <a href="https://link.zhihu.com/?target=https://arxiv.org/abs/2006.00900">https://arxiv.org/abs/2006.00900</a></p>
-<h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><blockquote>
-<p>Learning with sparse rewards remains a significant challenge in reinforcement learning (RL), especially when the aim is to train a policy capable of achieving multiple different goals. To date, the most successful approaches for dealing with multi-goal, sparse reward environments have been model-free RL algorithms. In this work we propose PlanGAN, a model-based algorithm specifically designed for solving multi-goal tasks in environments with sparse rewards. Our method builds on the fact that any trajectory of experience collected by an agent contains useful information about how to achieve the goals observed during that trajectory. We use this to train an ensemble of conditional generative models (GANs) to generate plausible trajectories that lead the agent from its current state towards a specified goal. We then combine these imagined trajectories into a novel planning algorithm in order to achieve the desired goal as efficiently as possible. The performance of PlanGAN has been tested on a number of robotic navigation/manipulation tasks in comparison with a range of model-free reinforcement learning baselines, including Hindsight Experience Replay. Our studies indicate that PlanGAN can achieve comparable performance whilst being around 4-8 times more sample efficient.</p>
-</blockquote>
-<h4 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h4><p>In this paper the authors present PlanGAN, a model-based algorithm that can naturally be applied to sparse reward environments with multiple goals. The core of this method builds upon the same principle that underlies HER — namely that any goal observed during a given trajectory can be used as an example of how to achieve that goal from states that occurred earlier on in that same trajectory. </p>
-<p>However, unlike HER, the algorithm does not directly learn a goal-conditioned policy/value function but rather train an ensemble of Generative Adversarial Networks (GANs) which learn to generate plausible future trajectories conditioned on achieving a particular goal. Then these imagined trajectories are combined into a novel planning algorithm that can reach those goals in an efficient manner.</p>
-<h4 id="Methodology"><a href="#Methodology" class="headerlink" title="Methodology"></a>Methodology</h4><p>The aim of the first major component of the methodology is to train a generative model that can take in the current state <img src="https://www.zhihu.com/equation?tex=s_t"> along with a desired goal <img src="https://www.zhihu.com/equation?tex=g"> and produce an imagined action at and next state <img src="https://www.zhihu.com/equation?tex=s_%7Bt+1%7D"> that moves the agent towards achieving <img src="https://www.zhihu.com/equation?tex=g"> .</p>
-<p>Intuitionally, the authors want to use the model to take a state-action pair <img src="https://www.zhihu.com/equation?tex=(s_t,+a_t)"> and predict the difference between the next state and current state, <img src="https://www.zhihu.com/equation?tex=s_%7Bt+1%7D-s_t"> . The predictive models in the paper are used to provide an L2 regularisation (Ridge) term in the generator loss that encourages the generated actions and next states to be consistent with the predictions of the one-step models. </p>
-<p><img src="https://pic3.zhimg.com/80/v2-e428832189cfaff49e0b58d32a048efe_1440w.jpg"></p>
-<p>The basic structure of the planner is to make use of a model to generate a number of imaginary future trajectories, score them, use these scores to choose the next action, and repeat this whole procedure at the next step. The score captures how effective those trajectories are in terms of moving towards the final goal <img src="https://www.zhihu.com/equation?tex=g"> . A good score here should reflect the fact that we want the next action to be moving us towards <img src="https://www.zhihu.com/equation?tex=g"> as quickly as possible whilst also ensuring that the goal can be retained at later time steps.</p>
-<p>Once these trajectories have been generated, the researchers give each of them a score based on the <em>fraction of time they spend achieving the goal</em>. This means that trajectories that reach the goal quickly are scored highly, but only if they are able to remain there. Accordingly, trajectories that do not reach the goal within T steps are given a score of zero. They can then score each of the initial actions <img src="https://www.zhihu.com/equation?tex=(a%5Eq_t)%5EQ_%7Bq=1%7D"> based on the average score of all the imagined trajectories that started with that action. These scores are normalised and denoted as <img src="https://www.zhihu.com/equation?tex=n_i"> . The final action returned by the planner is either the action with the maximum score or an exponentially weighted average of the initially proposed actions, <img src="https://www.zhihu.com/equation?tex=a_t=%5Cfrac%7B%5Csum_%7Bi=1%7D%5E%7BR%7D%7Be%5E%7B%5Calpha+n_i%7D%5Calpha_i%7D%7D%7B%5Csum_%7Bj=1%7D%5E%7BQ%7D%7Be%5E%7B%5Calpha+n_i%7D%7D%7D"> , where <img src="https://www.zhihu.com/equation?tex=%5Calpha%3E0"> is a hyperparameter. </p>
-<p><img src="https://pic1.zhimg.com/80/v2-f6288903a114299b9de194b129be7598_1440w.jpg"></p>
-]]></content>
-      <categories>
-        <category>academics</category>
-        <category>journal review</category>
-      </categories>
-      <tags>
-        <tag>Machine Learning</tag>
-        <tag>Reinforcement Learning</tag>
       </tags>
   </entry>
   <entry>
@@ -255,23 +144,134 @@
       </tags>
   </entry>
   <entry>
-    <title>Body Reform | 健身日志02</title>
-    <url>/2021/07/05/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9702/</url>
+    <title>Credit Scoring via Logistic Regression</title>
+    <url>/2021/06/23/p3/</url>
+    <content><![CDATA[<p><em><strong>Credit Scoring via Logistic Regression</strong></em></p>
+<p>Author: Ali Al-Arad</p>
+<p>Link: <a href="https://link.zhihu.com/?target=http://utstat.toronto.edu/~ali/papers/creditworthinessProject.pdf">http://utstat.toronto.edu/~ali/papers/creditworthinessProject.pdf</a></p>
+<h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><blockquote>
+<p>The goal of credit scoring models is to predict the creditworthiness of a customer and determine whether they will be able to meet a given financial obligation or default on it. Such models allow a financial institution to minimize the risk of loss by setting decision rules regarding which customers receive loan and credit card approvals. Logistic regression can be used to predict default events and model the influence of different variables on a consumer’s creditworthiness. In this paper we use a logistic regression model to predict the creditworthiness of bank customers using predictors related to their personal status and financial history. Model adequacy and robustness checks are performed to ensure that the model is being properly fitted and interpreted.</p>
+</blockquote>
+<h4 id="Dataset"><a href="#Dataset" class="headerlink" title="Dataset"></a>Dataset</h4><p>The data set used is the German Credit dataset obtained from the UCI machine-learning data archive and includes 20 covariates (7 numerical, 13 categorical) and 1000 observations. Each observation represents an individual customer with the response indicating their actual classification (1 = “Good” or 0 = “Bad”). </p>
+<p>For the purpose of this paper, 5 major predictors have been selected to build on the logistic model. The predictors cover financial, living and social indicators. </p>
+<p><img src="https://pic3.zhimg.com/80/v2-c3989f3d6ce654878902a3a1f6605c06_1440w.jpg"></p>
+<h4 id="Introduction-amp-Modelling"><a href="#Introduction-amp-Modelling" class="headerlink" title="Introduction &amp; Modelling"></a>Introduction &amp; Modelling</h4><p>In this paper, a binary logistic model is fitted to the data, using the logit link function. In other words, the classification of the <img src="https://www.zhihu.com/equation?tex=i_%7Bth%7D"> customer as having good or bad creditability is modeled using a Bernoulli random variable:</p>
+<p><img src="https://www.zhihu.com/equation?tex=Y_i=%5Cleft%5C%7B+%5Cbegin%7Baligned%7D+1+&+,+&+%5Cmbox%7Bif+the+customer+is+creditworthy%7D+%5C%5C+0+&+,+&+%5Cmbox%7Botherwise%7D+%5Cend%7Baligned%7D+%5Cright."></p>
+<p>with conditional probabilities <img src="https://www.zhihu.com/equation?tex=P(Y_i=1%7Cx_i)=%5Cpi_i"> and <img src="https://www.zhihu.com/equation?tex=P(Y_i=0%7Cx_i)=1-%5Cpi_i">. </p>
+<p>The conditional expectation is the given by: <img src="https://www.zhihu.com/equation?tex=E(Y_i%7Cx_i)=P(Y_i=1%7Cx_i)%5Ctimes+1+P(Y_i=0%7Cx_i)%5Ctimes+0=%5Cpi_i"> . </p>
+<p>The link function is essentially transferring the predicted probability into a more interpretable indicator which in this case is odds ratio: </p>
+<p>logit <img src="https://www.zhihu.com/equation?tex=%5Cpi_i=%5Clog(%5Cfrac%7B%5Cpi_i%7D%7B1-%5Cpi_i%7D)=x_i%5E%7B%27%7D%5Cbeta=%5Ceta_i"></p>
+<p>The estimation is performed by iterative weighted least squares (IWLS). </p>
+<h4 id="Model-Adequacy"><a href="#Model-Adequacy" class="headerlink" title="Model Adequacy"></a>Model Adequacy</h4><p>In terms of model validation, the author first tested on the significance of the deviance reduction, which suggest weak evidence against the model/link given large p-value. Since the Pearson chi-square statistic or the deviance likelihood ratio test are not informative, Hosmer Lemeshow Test was performed to further compare the test statistic of observations in g categories to a <img src="https://www.zhihu.com/equation?tex=%5Cchi%5E2_%7Bg-2%7D"> distribution. Similar result was given.</p>
+<h4 id="Outlier-detection"><a href="#Outlier-detection" class="headerlink" title="Outlier detection"></a>Outlier detection</h4><p>In this paper, Cook’s Distance was used to plot the observations and identified three outliers in the data set. Comparing original model with a second model by removing those three cases to study their impact on the estimation and conclusions, the author has found that removal of those cases does not lead to noticeable changes in estimated parameters. </p>
+<h4 id="Robustness-Checks"><a href="#Robustness-Checks" class="headerlink" title="Robustness Checks"></a>Robustness Checks</h4><p>An alternative model is fit using aggregated data, to see if the conclusions of these models agree with those of the original model. By grouping the covariate data prior to aggregation, a smaller range of covariate patterns (i.e. collinearity) would be achieved. In particular, the categories of 4 factor variables have been more general, including history, duration, marital status and purpose. Based on Likelihood ratio test, the results agree with those of the original model. The exceptions are that when gender and status are considered separately, they are not significant variables, and purpose is also insignificant at 95% significance level. </p>
+<p><img src="https://pic4.zhimg.com/80/v2-0330cb83f1e1dd922a9435e1d9f06ab7_1440w.jpg"></p>
+<h4 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h4><p>The main findings of statistical analysis are as follows:</p>
+<ul>
+<li>Odds of a consumer’s creditworthiness increase with an increase in the size of their checking account.</li>
+<li>Odds of a consumer’s creditworthiness is 1.636 times greater when he is a single male than who being divorced/married females. </li>
+<li>Odds of a consumer’s creditworthiness with a purpose of car is likely to be the greatest.</li>
+<li>Increased duration decreases the odds of creditworthiness.</li>
+<li>Consumers with “critical” credit history show large increases in expected odds of creditworthiness. In other words, the result suggests that consumers with worse credit history are less likely to default. It is very important that author has given out two possible explanations:</li>
+</ul>
+<ol>
+<li>The bank may be more stringent when it comes to loaning a consumer with bad credit history, whereas consumers with good credit history do not face the same kind of scrutiny and may end up being issued a loan they eventually cannot repay.</li>
+<li>An alternative explanation is that there may be a data issue in which the categories were incorrectly labeled. It would be best to be cautious with the interpretation of this result.</li>
+</ol>
+]]></content>
+      <categories>
+        <category>academics</category>
+        <category>journal review</category>
+      </categories>
+      <tags>
+        <tag>Statistics</tag>
+        <tag>Finance</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PlanGAN, Model-based Planning With Sparse Rewards and Multiple Goals</title>
+    <url>/2021/06/22/p2/</url>
+    <content><![CDATA[<p><em><strong>PlanGAN: Model-based Planning With Sparse Rewards and Multiple Goals</strong></em></p>
+<p>Authors: Henry Charlesworth, Giovanni Montana</p>
+<p>Link: <a href="https://link.zhihu.com/?target=https://arxiv.org/abs/2006.00900">https://arxiv.org/abs/2006.00900</a></p>
+<h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><blockquote>
+<p>Learning with sparse rewards remains a significant challenge in reinforcement learning (RL), especially when the aim is to train a policy capable of achieving multiple different goals. To date, the most successful approaches for dealing with multi-goal, sparse reward environments have been model-free RL algorithms. In this work we propose PlanGAN, a model-based algorithm specifically designed for solving multi-goal tasks in environments with sparse rewards. Our method builds on the fact that any trajectory of experience collected by an agent contains useful information about how to achieve the goals observed during that trajectory. We use this to train an ensemble of conditional generative models (GANs) to generate plausible trajectories that lead the agent from its current state towards a specified goal. We then combine these imagined trajectories into a novel planning algorithm in order to achieve the desired goal as efficiently as possible. The performance of PlanGAN has been tested on a number of robotic navigation/manipulation tasks in comparison with a range of model-free reinforcement learning baselines, including Hindsight Experience Replay. Our studies indicate that PlanGAN can achieve comparable performance whilst being around 4-8 times more sample efficient.</p>
+</blockquote>
+<h4 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h4><p>In this paper the authors present PlanGAN, a model-based algorithm that can naturally be applied to sparse reward environments with multiple goals. The core of this method builds upon the same principle that underlies HER — namely that any goal observed during a given trajectory can be used as an example of how to achieve that goal from states that occurred earlier on in that same trajectory. </p>
+<p>However, unlike HER, the algorithm does not directly learn a goal-conditioned policy/value function but rather train an ensemble of Generative Adversarial Networks (GANs) which learn to generate plausible future trajectories conditioned on achieving a particular goal. Then these imagined trajectories are combined into a novel planning algorithm that can reach those goals in an efficient manner.</p>
+<h4 id="Methodology"><a href="#Methodology" class="headerlink" title="Methodology"></a>Methodology</h4><p>The aim of the first major component of the methodology is to train a generative model that can take in the current state <img src="https://www.zhihu.com/equation?tex=s_t"> along with a desired goal <img src="https://www.zhihu.com/equation?tex=g"> and produce an imagined action at and next state <img src="https://www.zhihu.com/equation?tex=s_%7Bt+1%7D"> that moves the agent towards achieving <img src="https://www.zhihu.com/equation?tex=g"> .</p>
+<p>Intuitionally, the authors want to use the model to take a state-action pair <img src="https://www.zhihu.com/equation?tex=(s_t,+a_t)"> and predict the difference between the next state and current state, <img src="https://www.zhihu.com/equation?tex=s_%7Bt+1%7D-s_t"> . The predictive models in the paper are used to provide an L2 regularisation (Ridge) term in the generator loss that encourages the generated actions and next states to be consistent with the predictions of the one-step models. </p>
+<p><img src="https://pic3.zhimg.com/80/v2-e428832189cfaff49e0b58d32a048efe_1440w.jpg"></p>
+<p>The basic structure of the planner is to make use of a model to generate a number of imaginary future trajectories, score them, use these scores to choose the next action, and repeat this whole procedure at the next step. The score captures how effective those trajectories are in terms of moving towards the final goal <img src="https://www.zhihu.com/equation?tex=g"> . A good score here should reflect the fact that we want the next action to be moving us towards <img src="https://www.zhihu.com/equation?tex=g"> as quickly as possible whilst also ensuring that the goal can be retained at later time steps.</p>
+<p>Once these trajectories have been generated, the researchers give each of them a score based on the <em>fraction of time they spend achieving the goal</em>. This means that trajectories that reach the goal quickly are scored highly, but only if they are able to remain there. Accordingly, trajectories that do not reach the goal within T steps are given a score of zero. They can then score each of the initial actions <img src="https://www.zhihu.com/equation?tex=(a%5Eq_t)%5EQ_%7Bq=1%7D"> based on the average score of all the imagined trajectories that started with that action. These scores are normalised and denoted as <img src="https://www.zhihu.com/equation?tex=n_i"> . The final action returned by the planner is either the action with the maximum score or an exponentially weighted average of the initially proposed actions, <img src="https://www.zhihu.com/equation?tex=a_t=%5Cfrac%7B%5Csum_%7Bi=1%7D%5E%7BR%7D%7Be%5E%7B%5Calpha+n_i%7D%5Calpha_i%7D%7D%7B%5Csum_%7Bj=1%7D%5E%7BQ%7D%7Be%5E%7B%5Calpha+n_i%7D%7D%7D"> , where <img src="https://www.zhihu.com/equation?tex=%5Calpha%3E0"> is a hyperparameter. </p>
+<p><img src="https://pic1.zhimg.com/80/v2-f6288903a114299b9de194b129be7598_1440w.jpg"></p>
+]]></content>
+      <categories>
+        <category>academics</category>
+        <category>journal review</category>
+      </categories>
+      <tags>
+        <tag>Machine Learning</tag>
+        <tag>Reinforcement Learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hindsight Experience Replay</title>
+    <url>/2021/06/21/p1/</url>
+    <content><![CDATA[<p><em><strong>Hindsight Experience Replay</strong></em></p>
+<p>Authors: Marcin Andrychowicz∗ , Filip Wolski, Alex Ray, Jonas Schneider, Rachel Fong, Peter Welinder, Bob McGrew, Josh Tobin, Pieter Abbeel† , Wojciech Zaremba†</p>
+<p>Link: <a href="https://link.zhihu.com/?target=https://arxiv.org/abs/1707.01495">https://arxiv.org/abs/1707.01495</a></p>
+<h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><blockquote>
+<p>Dealing with sparse rewards is one of the biggest challenges in Reinforcement Learning (RL). We present a novel technique called Hindsight Experience Replay which allows sample-efficient learning from rewards which are sparse and binary and therefore avoid the need for complicated reward engineering. It can be combined with an arbitrary off-policy RL algorithm and may be seen as a form of implicit curriculum. We demonstrate our approach on the task of manipulating objects with a robotic arm. In particular, we run experiments on three different tasks: pushing, sliding, and pick-and-place, in each case using only binary rewards indicating whether or not the task is completed. Our ablation studies show that Hindsight Experience Replay is a crucial ingredient which makes training possible in these challenging environments. We show that our policies trained on a physics simulation can be deployed on a physical robot and successfully complete the task. The video presenting our experiments is available at <a href="https://link.zhihu.com/?target=https://goo.gl/SMrQnI">https://goo.gl/SMrQnI</a>.</p>
+</blockquote>
+<h4 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h4><p>HER (Hindsight Experience Replay) is introduced to allow the algorithm to learn almost as much from achieving an undesired outcome as from the desired one, as humans do. Unlike the current generation of model-free RL algorithms, HER makes the learning possible even if the reward signal is unshaped (i.e. sparse and binary). </p>
+<p>In many cased of reinforcement learning, we often need to augment the reward using domain knowledge, in what is known as Reward Engineering or Reward Shaping. The problem here is that it is not always practically workable to discover the proper shaping for the reward functions. In other words, the domain knowledge required for strengthening learning is not always available. </p>
+<h4 id="Example-amp-Methodology"><a href="#Example-amp-Methodology" class="headerlink" title="Example &amp; Methodology"></a>Example &amp; Methodology</h4><p>In this paper, the authors have given out a motivating example, which asks us to consider a bit-flipping environment (page3) with state space <img src="https://www.zhihu.com/equation?tex=S=(0,1)%5En"> , action space <img src="https://www.zhihu.com/equation?tex=A=%7B0,1,...,n-1%7D">for some integer n in which executing the i-th action flips the i-th bit of the state. The policy gets a reward of -1 as long as it is not in the target state, i.e. <img src="https://www.zhihu.com/equation?tex=r_g(s,a)=-%5Bs%5Cne+g%5D"> . </p>
+<p>As mentioned in the example, a standard solution to this problem would be to use a shaped reward function which is more informative and guides the agent towards the goal, e.g. <img src="https://www.zhihu.com/equation?tex=r_g(s,a)=-%7C%7Cs-g%7C%7C%5E2"> . But this approach may be difficult to apply to more complicated problems (i.e. hard to capture the full information using shaped reward function like above). </p>
+<p>The second approach that has been raised is HER, which the reasoning is explained below:</p>
+<blockquote>
+<p>The pivotal idea behind our approach is to re-examine this trajectory with a different goal — while this trajectory may not help us learn how to achieve the state <img src="https://www.zhihu.com/equation?tex=g"> , it definitely tells us something about how to achieve the state <img src="https://www.zhihu.com/equation?tex=s_T">.</p>
+</blockquote>
+<p><strong>Off-Policy Learning</strong></p>
+<p>But how do human deal with such problem using HER? Sometimes when we fail to perform some tasks, we recognize that what we have done could be useful in another context, or for another task. It is the intuition that the authors of the paper used to develop their method. </p>
+<p>In HER, the authors suggest the following strategy: suppose our agent performs an episode of trying to reach goal state G from initial state S, but fails to do so and ends up in some state S’ at the end of the episode. We cache the trajectory into our replay buffer where <img src="https://www.zhihu.com/equation?tex=r_k">is the reward received at step k of the episode, and<img src="https://www.zhihu.com/equation?tex=a_k">is the action taken at step k of the episode.</p>
+<p>The idea in HER is to <strong>imagine that our goal has actually been S’ all along</strong>, and that in this alternative reality our agent has reached the goal successfully and got the positive reward for doing so.</p>
+<p>In addition to caching the real trajectory, we also cache the trajectory with imagined goal S’. This trajectory is motivated by the human ability to learn useful things from failed attempts. By introducing the imagined trajectories to our replay buffer, we ensure that<strong>no matter how bad our policy is, it will always have some positive rewards to learn from</strong>.</p>
+<p>The magic of function approximation by neural networks will ensure that our policy could also reach states similar to those it has seen before; this is the generalization property that is the hallmark of successful deep learning. At first, the agent will be able to reach states in a relatively small area around the initial state, but gradually it expands this reachable area of the state space until finally it learns to reach those goal states we are actually interested in.</p>
+<p><img src="https://pic1.zhimg.com/80/v2-ff722eecbf0f8f8ef16586d10451d288_1440w.jpg" alt="Pseudo Code of HER"></p>
+<blockquote>
+<p>HER may be seen as a form of implicit curriculum as the goals used for replay naturally shift from ones which are simple to achieve even by a random agent to more difficult ones. However, in contrast to explicit curriculum, HER does not require having any control over the distribution of initial environment states.</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>academics</category>
+        <category>journal review</category>
+      </categories>
+      <tags>
+        <tag>Machine Learning</tag>
+        <tag>Reinforcement Learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Body Reform | 健身日志01</title>
+    <url>/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/</url>
     <content><![CDATA[<blockquote>
 <p>Train like a Spartan.</p>
 </blockquote>
-<p>4月末之后就基本以居家健身为主，力量训练都是借用哑铃来完成。</p>
-<p>和4月的健身计划相比，6月我开始加大了有氧的训练量，总共完成了103km的跑量。在饮食上也适当放宽了碳水的摄入量，从而来维持同等强度的力量训练。</p>
-<img src="/2021/07/05/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9702/3.png" class="" title="Keep跑步">
+<p>第一次尝试以文字的形式来记录下自己日常健身时的训练内容，希望可以不断改善自己的训练计划，找到最适合自己的生活方式。</p>
+<p>运动期间我每日的热量大概在1800千卡左右，宏观营养摄入量如下：</p>
+<ul>
+<li>脂肪 37-45g</li>
+<li>蛋白质 104-127g</li>
+<li>碳水 229-280g</li>
+</ul>
+<p>这次的日志记录了4月末为期10天（4/21-4/30）的训练内容，平均下来一周每个肌群会训练1到2次。由于我自己的体脂含量偏高，所以力量训练结束后会进行30min左右的有氧，来加速身体内脂肪的燃烧。</p>
+<img src="/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/1.jpg" class="">
 
-<p>这次的日志记录了6月末为期10天的训练内容，平均下来每周会训练腹部、手臂、肩膀和背部肌群2次，腿部肌肉没有特别训练，主要通过有氧跑步时的变速跑和HIIT中的多种复合型跳跃动作来刺激肌群。</p>
-<img src="/2021/07/05/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9702/1.png" class="">
+<img src="/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/2.jpg" class="">
 
-<img src="/2021/07/05/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9702/2.png" class="">
+<img src="/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/3.jpg" class="">
 
-<p>整体来看跑步时的心肺得到了不小的提升，腿部的肌肉也没有刚开始跑步那样酸痛。运动前后的热身与拉伸也花了更长的时间去完成，充分地去调动和放松训练的肌群。</p>
-<p>希望7月可以继续维持现有的有氧量，适当提升下配速。在饮食上继续控制糖分的摄入，加强对于脂肪摄入的控制。</p>
-<hr>
 <p>运动带给我们的好处非常之多，无论背后的目标是减脂、增肌、身体塑性或是长久形成的生活习惯，都可以借由社交平台一起来探讨训练内外的各种心得和知识。之后的内容会继续从饮食、睡眠、训练、心态等等的角度来记录健身日常，喜欢的小伙伴欢迎点赞支持一下哟，一起自律打卡。</p>
 ]]></content>
       <categories>
