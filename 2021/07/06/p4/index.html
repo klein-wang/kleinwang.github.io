@@ -21,25 +21,41 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.5.0","exturl":false,"sidebar":{"position":"right","width":240,"display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="Personal website for idea spreading.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="My Channel">
-<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta name="description" content="The deep learning approach for hedging under parameter uncertainty is based on recent developed class of affine processes under parameter uncertainty. In terms of a realistic data application, authors">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Robust deep hedging">
+<meta property="og:url" content="http://example.com/2021/07/06/p4/index.html">
 <meta property="og:site_name" content="My Channel">
-<meta property="og:description" content="Personal website for idea spreading.">
+<meta property="og:description" content="The deep learning approach for hedging under parameter uncertainty is based on recent developed class of affine processes under parameter uncertainty. In terms of a realistic data application, authors">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=dX_t=(b_0+b_1X_t)dt++(a_0+a_1X_t)%5E%5Cgamma+dW_t">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Cgamma=1/2">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Ctheta">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5B%5Cunderline%7B%5Ctheta%7D,+%5Cbar%7B%5Ctheta%7D%5D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=b(x)">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=a(x)">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=T">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Cpsi(X_T)">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=v(t,x):=%5Csup_%7BP%5Cin+A(t,+x,%5CTheta)%7D%5Cmathbb%7BE%7D%5EP%5B%5Cpsi(X_T)%5D">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-ddf41a684796a41ae21312cbe4dd79d6_1440w.jpg">
+<meta property="article:published_time" content="2021-07-06T13:40:20.000Z">
+<meta property="article:modified_time" content="2021-07-08T00:19:01.139Z">
 <meta property="article:author" content="Klein">
+<meta property="article:tag" content="Statistics">
+<meta property="article:tag" content="Finance">
+<meta property="article:tag" content="DNN">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.zhihu.com/equation?tex=dX_t=(b_0+b_1X_t)dt++(a_0+a_1X_t)%5E%5Cgamma+dW_t">
 
 
-<link rel="canonical" href="http://example.com/page/2/">
+<link rel="canonical" href="http://example.com/2021/07/06/p4/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"page/2/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2021/07/06/p4/","path":"2021/07/06/p4/","title":"Robust deep hedging"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>My Channel</title>
+<title>Robust deep hedging | My Channel</title>
   
 
 
@@ -133,7 +149,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -146,6 +162,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Abstract"><span class="nav-number">1.</span> <span class="nav-text">Abstract</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">2.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Methodology"><span class="nav-number">3.</span> <span class="nav-text">Methodology</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -233,17 +250,18 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/23/p3/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/06/p4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -255,9 +273,9 @@
       <meta itemprop="name" content="My Channel">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/06/23/p3/" class="post-title-link" itemprop="url">Credit Scoring via Logistic Regression</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Robust deep hedging
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -267,14 +285,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-06-23 21:40:20" itemprop="dateCreated datePublished" datetime="2021-06-23T21:40:20+08:00">2021-06-23</time>
+      <time title="Created: 2021-07-06 21:40:20" itemprop="dateCreated datePublished" datetime="2021-07-06T21:40:20+08:00">2021-07-06</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-06-27 15:04:31" itemprop="dateModified" datetime="2021-06-27T15:04:31+08:00">2021-06-27</time>
+        <time title="Modified: 2021-07-08 08:19:01" itemprop="dateModified" datetime="2021-07-08T08:19:01+08:00">2021-07-08</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -291,8 +309,16 @@
     </span>
 
   
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
 </div>
 
+            <div class="post-description">The deep learning approach for hedging under parameter uncertainty is based on recent developed class of affine processes under parameter uncertainty. In terms of a realistic data application, authors have chosen the COVID-19 period since stock markets experienced unexpectedly high volatility and variation in the price paths.</div>
         </div>
       </header>
 
@@ -300,16 +326,34 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>In this paper we use a logistic regression model to predict the creditworthiness of bank customers using predictors related to their personal status and financial history. Model adequacy and robustness checks are performed to ensure that the model is being properly fitted and interpreted.</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/23/p3/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+        <p>*<strong>Robust deep hedging*</strong></p>
+<p>Authors: Eva Lütkebohmert, Thorsten Schmidt, Julian Sester</p>
+<p>Link: <a href="https://link.zhihu.com/?target=https://arxiv.org/abs/2106.10024">https://arxiv.org/abs/2106.10024</a></p>
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><blockquote>
+<p>We study pricing and hedging under parameter uncertainty for a class of Markov processes which we call generalized affine processes and which includes the Black Scholes model as well as the constant elasticity of variance (CEV) model as special cases. Based on a general dynamic programming principle, we are able to link the associated nonlinear expectation to a variationally form of the Kolmogorov equation which opens the door for fast numerical pricing in the robust framework. The main novelty of the paper is that we propose a deep hedging approach which efficiently solves the hedging problem under parameter uncertainty. We numerically evaluate this method on simulated and real data and show that the robust deep hedging outperforms existing hedging approaches, in particular in highly volatile periods.</p>
+</blockquote>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>In the beginning, the authors raised the classical estimation problem in predicting the evolution of a stock in the future, which is that parameters estimated carry confidence intervals which need to be taken into account for the prediction. In particular, changes in the underlying dynamics are “rather the rule than the exception and additional uncertainty and model risk come into play, widening the confidence interval”. </p>
+<h2 id="Methodology"><a href="#Methodology" class="headerlink" title="Methodology"></a>Methodology</h2><p>The deep learning approach for hedging under parameter uncertainty is based on recent developed class of affine processes under parameter uncertainty, which is simply referred as “nonlinear affine processes (NGA)”. </p>
+<p>In terms of a realistic data application, authors have chosen the COVID-19 period since stock markets experienced unexpectedly high volatility and variation in the price paths. In order to find reliable estimated for the parameter intervals specifying the uncertainty in the considered model class, a sliding-window MLE (maximum-likelihood estimation) approach was used. </p>
+<p><strong>Parameterization</strong></p>
+<p>A generalized affine diffusion is a continuous semimartingale X ([definition] Semimartingale: In probability theory, a real valued stochastic process X is called a semimartingale if it can be decomposed as the sum of a local martingale and an adapted finite-variation process. ) which is a unique strong solution of the stochastic differential equation (SDE):</p>
+<p><img src="https://www.zhihu.com/equation?tex=dX_t=(b_0+b_1X_t)dt++(a_0+a_1X_t)%5E%5Cgamma+dW_t"> , where <img src="https://www.zhihu.com/equation?tex=%5Cgamma=1/2"> gives the well-known special case of a (continuous) affine process.</p>
+<p>Another intuition here within parameter uncertainty is that: instead of assuming the parameter <img src="https://www.zhihu.com/equation?tex=%5Ctheta"> to be known exactly, the authors introduce an interval <img src="https://www.zhihu.com/equation?tex=%5B%5Cunderline%7B%5Ctheta%7D,+%5Cbar%7B%5Ctheta%7D%5D"> and consider each value in the interval equally possible. The description of the generalized affine process under parameter uncertainty is now intuitively given by all those probability laws describing a diffusion where the drift and the volatility always stay in the intervals <img src="https://www.zhihu.com/equation?tex=b(x)"> and <img src="https://www.zhihu.com/equation?tex=a(x)"> . </p>
+<p><strong>Robust pricing of derivatives</strong></p>
+<p>The study has considered an European claim with maturity <img src="https://www.zhihu.com/equation?tex=T"> and payoff <img src="https://www.zhihu.com/equation?tex=%5Cpsi(X_T)"> . The value function v is defined as:</p>
+<p><img src="https://www.zhihu.com/equation?tex=v(t,x):=%5Csup_%7BP%5Cin+A(t,+x,%5CTheta)%7D%5Cmathbb%7BE%7D%5EP%5B%5Cpsi(X_T)%5D"></p>
+<p>where A is referred as all absolutely continuous semimartingale laws. </p>
+<p>In the next stage of the study, the authors used nonlinear Kolmogorov equation as an efficient tool to compute the value function by solving nonlinear partial differential equations numerically (based on Theorem 2.2, page 5). In other words, the goal here is to find a numerical procedure which replaces the classical Monte-Carlo estimation in a robust setting. </p>
+<p>In particular, deep neutral networks were applied to find the optimal parameters within the given intervals (i.e. parameter uncertainty) in order to minimize the hedging error. The full procedure is summarized by the algorithm 1 below:</p>
+<p><img src="https://pic3.zhimg.com/80/v2-ddf41a684796a41ae21312cbe4dd79d6_1440w.jpg"></p>
+<p>If you are interested in further application of this robust hedging strategy in option products or real life data, more examples can be found in the paper:</p>
+<ul>
+<li>3.2.1 Hedging of at-the-money call options, page7-9</li>
+<li>3.2.2. Hedging of a butterfly option, page9-10</li>
+<li>3.2.3 Hedging of a path-dependent option, page10</li>
+<li>4 US stock market index S&amp;P 500 from 26 September 2008 until 09 April 2020 from Thomson Reuters Eikon (excluding the Covid-19 period for containing high volatility)</li>
+</ul>
+
     </div>
 
     
@@ -317,277 +361,61 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
+          <div class="reward-container">
+  <div>Buy me a coffee</div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    Donate
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="Klein WeChat Pay">
+        <span>WeChat Pay</span>
+      </div>
+      <div>
+        <img src="/images/alipay.png" alt="Klein Alipay">
+        <span>Alipay</span>
+      </div>
+
+  </div>
 </div>
 
+          <div class="followme">
+  <span>Welcome to my other publishing channels</span>
 
+  <div class="social-list">
 
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://www.zhihu.com/people/wang-yuan-chen-24">
+          <span class="icon">
+            <i class="fab fa-zhihu"></i>
+          </span>
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/22/p2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Klein">
-      <meta itemprop="description" content="Personal website for idea spreading.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My Channel">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/06/22/p2/" class="post-title-link" itemprop="url">PlanGAN, Model-based Planning With Sparse Rewards and Multiple Goals</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-06-22 21:40:20" itemprop="dateCreated datePublished" datetime="2021-06-22T21:40:20+08:00">2021-06-22</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-06-27 15:04:06" itemprop="dateModified" datetime="2021-06-27T15:04:06+08:00">2021-06-27</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/academics/" itemprop="url" rel="index"><span itemprop="name">academics</span></a>
-        </span>
-          , 
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/academics/journal-review/" itemprop="url" rel="index"><span itemprop="name">journal review</span></a>
-        </span>
-    </span>
-
-  
+          <span class="label">Zhihu</span>
+        </a>
+      </div>
+  </div>
 </div>
 
-        </div>
-      </header>
+          <div class="post-tags">
+              <a href="/tags/Statistics/" rel="tag"># Statistics</a>
+              <a href="/tags/Finance/" rel="tag"># Finance</a>
+              <a href="/tags/DNN/" rel="tag"># DNN</a>
+          </div>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>In this work we propose PlanGAN, a model-based algorithm specifically designed for solving multi-goal tasks in environments with sparse rewards. Our method builds on the fact that any trajectory of experience collected by an agent contains useful information about how to achieve the goals observed during that trajectory.</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/22/p2/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/21/p1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Klein">
-      <meta itemprop="description" content="Personal website for idea spreading.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My Channel">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/06/21/p1/" class="post-title-link" itemprop="url">Hindsight Experience Replay</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-06-21 23:40:20" itemprop="dateCreated datePublished" datetime="2021-06-21T23:40:20+08:00">2021-06-21</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-06-27 15:03:42" itemprop="dateModified" datetime="2021-06-27T15:03:42+08:00">2021-06-27</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/academics/" itemprop="url" rel="index"><span itemprop="name">academics</span></a>
-        </span>
-          , 
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/academics/journal-review/" itemprop="url" rel="index"><span itemprop="name">journal review</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Dealing with sparse rewards is one of the biggest challenges in Reinforcement Learning (RL). We present a novel technique called Hindsight Experience Replay which allows sample-efficient learning from rewards which are sparse and binary and therefore avoid the need for complicated reward engineering.</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/21/p1/">
-                Read more &raquo;
-              </a>
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/07/05/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9702/" rel="prev" title="Body Reform | 健身日志02">
+                  <i class="fa fa-chevron-left"></i> Body Reform | 健身日志02
+                </a>
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Klein">
-      <meta itemprop="description" content="Personal website for idea spreading.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My Channel">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/" class="post-title-link" itemprop="url">Body Reform | 健身日志01</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-05-11 23:40:20" itemprop="dateCreated datePublished" datetime="2021-05-11T23:40:20+08:00">2021-05-11</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-05 19:33:41" itemprop="dateModified" datetime="2021-07-05T19:33:41+08:00">2021-07-05</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/hobbies/" itemprop="url" rel="index"><span itemprop="name">hobbies</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>这次的日志记录了4月末为期10天（4/21-4/30）的训练内容，平均下来一周每个肌群会训练1到2次。由于我自己的体脂含量偏高，所以力量训练结束后会进行30min左右的有氧，来加速身体内脂肪的燃烧。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/">
-                Read more &raquo;
-              </a>
+            <div class="post-nav-item">
+                <a href="/2021/07/07/p5/" rel="next" title="Verification of probability forecasts for football outcomes">
+                  Verification of probability forecasts for football outcomes <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          </div>
     </footer>
   </article>
 </div>
@@ -595,9 +423,7 @@
 
 
 
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-  </nav>
+
 
 </div>
   </main>

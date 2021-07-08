@@ -26,6 +26,83 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Verification of probability forecasts for football outcomes</title>
+    <url>/2021/07/07/p5/</url>
+    <content><![CDATA[<p>*<strong>More on verification of probability forecasts for football outcomes: score decompositions, reliability, and discrimination analyses*</strong></p>
+<p>Authors: Jean-Louis Foulley</p>
+<p>Link: <a href="https://link.zhihu.com/?target=https://arxiv.org/abs/2106.14345">https://arxiv.org/abs/2106.14345</a></p>
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><blockquote>
+<p>Forecast of football outcomes in terms of Home Win, Draw and Away Win (HDA) relies largely on ex ante probability elicitation of these events and ex post verification of them via computation of probability scoring rules (Brier, Ranked Probability, Logarithmic, Zero-One scores). Usually, appraisal of the quality of forecasting procedures is restricted to reporting mean score values. The purpose of this article is to propose additional tools of verification, such as score decompositions into several components of special interest. Graphical and numerical diagnoses of reliability and discrimination and kindred statistical methods are presented using different techniques of binning (fixed thresholds, quantiles, logistic and iso regression). These procedures are illustrated on probability forecasts for the outcomes of the UEFA Champions League (C1) at the end of the group stage based on typical Poisson regression models with reasonably good results in terms of reliability as compared to those obtained from bookmaker odds and whatever the technique used. Links with research in machine learning and different areas of application (meteorology, medicine) are discussed.</p>
+</blockquote>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a><strong>Introduction</strong></h2><p>In the article, the author is considering outcome variables as HAD (Home Win, Away Win, Draw) categorical results, in terms of scorelines {Y(A), Y(B)} goals in match (A vs B) i.e., pairs of integers. Traditionally in football, one summarizes HDA forecast performance by a synthetic criterion such as the mean square error known as Brier’s score (1950). To review the deficiencies of issued forecasts, analytical attributes of Brier’s score can be brought out such as Reliability, Resolution, Discrimination, Refinement and etc. </p>
+<h2 id="Parameterization-Decomposition-of-the-Brier-score"><a href="#Parameterization-Decomposition-of-the-Brier-score" class="headerlink" title="Parameterization: Decomposition of the Brier score"></a><strong>Parameterization: Decomposition of the Brier score</strong></h2><p>Let X be the binary outcome of the event H with probability and P the random variable probabilistic forecast of X taking values p. The Half-Brier score defined as the loss function <img src="https://www.zhihu.com/equation?tex=S(P,X)=(P-X)%5E2"> . Using the conditioning rule, the Murphy (1973, Calibration-Refinement factorization) decomposition of its expectation can be written as:</p>
+<p><img src="https://www.zhihu.com/equation?tex=%5Cmathbb%7BE%7D%5BS(P,X)%5D=Var(X)-Var_P+%5B%5Cmathbb%7BE%7D_X(X%7CP)%5D+%5Cmathbb%7BE%7D_P%7B%5B%5Cmathbb%7BE%7D_X(X%7CP)-P%5D%5E2%7D"></p>
+<p>, where three terms are respectively representing Uncertainty (UNC), Resolution (RES) and Reliability (REL). </p>
+<ul>
+<li>UNC measures the variance of the outcome that is out of control of the forecaster,</li>
+<li>RES measures the variability between the conditional expectations of the observed outcomes given their forecasts (i.e. the ability of forecast to distinguish situations with distinctly different frequencies of occurrence),</li>
+<li>REL measures the average squared differences between the conditional expectation of the outcome and its forecast. </li>
+</ul>
+<p><img src="https://pic4.zhimg.com/80/v2-9a10c88320d5aefa7de907d052a8ea3b_1440w.jpg"></p>
+<p>A second factorization method (Likelihood-base) is also discussed which includes a Refinement (REF), Discrimination (DIS) term. </p>
+<h2 id="Methodology-amp-Analysis"><a href="#Methodology-amp-Analysis" class="headerlink" title="Methodology &amp; Analysis"></a><strong>Methodology &amp; Analysis</strong></h2><p>A logistic model of the probability of Homewin, Draw and Awaywin (HDA) was fitted on the logit of its probabilistic forecast under a Poisson regression model (POI). </p>
+<p><img src="https://pic1.zhimg.com/80/v2-64ac5d39d38cf7d18a08586ea09b5be4_1440w.jpg"></p>
+<p>Following Cox (1958), the model relating X to P is written via a logit linear predictor: <img src="https://www.zhihu.com/equation?tex=logit%5BPr(X_i=1)%5D=%5Calpha+%5Cbeta+%5Ctimes+logit(p_i)"> with i) ( <img src="https://www.zhihu.com/equation?tex=%5Calpha%3E0+%5Cmbox%7B+and+%7D+%5Cbeta=1"> ) for concave under-forecasting profiles; and ii) ( <img src="https://www.zhihu.com/equation?tex=%5Calpha%3C0+%5Cmbox%7B+and+%7D+%5Cbeta=1"> ) for convex over-forecasting profiles. </p>
+<p>From the Reliability Diagrams for Home Win Probability Forecasts, results were shown that the forecasts were reliable with 95% Consistency Bands. </p>
+<p><img src="https://pic1.zhimg.com/80/v2-5101660968fce9aefa0f3883704d1e40_1440w.jpg"></p>
+<p>The article has further discussed verifications on Likelihood-base and Yates’ decompositions of Brier’s score. Regarding its application to the UEFA Champions League, it turns out that forecasts of Away Wins is both well calibrated and refined with good discrimination properties. The same trend can be seen on Home Wins, but with a trade-off between that over-forecasted category and under-forecasted draws with little discrimination of draw forecasts.</p>
+]]></content>
+      <categories>
+        <category>academics</category>
+        <category>journal review</category>
+      </categories>
+      <tags>
+        <tag>Statistics</tag>
+        <tag>Brier Score</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Robust deep hedging</title>
+    <url>/2021/07/06/p4/</url>
+    <content><![CDATA[<p>*<strong>Robust deep hedging*</strong></p>
+<p>Authors: Eva Lütkebohmert, Thorsten Schmidt, Julian Sester</p>
+<p>Link: <a href="https://link.zhihu.com/?target=https://arxiv.org/abs/2106.10024">https://arxiv.org/abs/2106.10024</a></p>
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><blockquote>
+<p>We study pricing and hedging under parameter uncertainty for a class of Markov processes which we call generalized affine processes and which includes the Black Scholes model as well as the constant elasticity of variance (CEV) model as special cases. Based on a general dynamic programming principle, we are able to link the associated nonlinear expectation to a variationally form of the Kolmogorov equation which opens the door for fast numerical pricing in the robust framework. The main novelty of the paper is that we propose a deep hedging approach which efficiently solves the hedging problem under parameter uncertainty. We numerically evaluate this method on simulated and real data and show that the robust deep hedging outperforms existing hedging approaches, in particular in highly volatile periods.</p>
+</blockquote>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>In the beginning, the authors raised the classical estimation problem in predicting the evolution of a stock in the future, which is that parameters estimated carry confidence intervals which need to be taken into account for the prediction. In particular, changes in the underlying dynamics are “rather the rule than the exception and additional uncertainty and model risk come into play, widening the confidence interval”. </p>
+<h2 id="Methodology"><a href="#Methodology" class="headerlink" title="Methodology"></a>Methodology</h2><p>The deep learning approach for hedging under parameter uncertainty is based on recent developed class of affine processes under parameter uncertainty, which is simply referred as “nonlinear affine processes (NGA)”. </p>
+<p>In terms of a realistic data application, authors have chosen the COVID-19 period since stock markets experienced unexpectedly high volatility and variation in the price paths. In order to find reliable estimated for the parameter intervals specifying the uncertainty in the considered model class, a sliding-window MLE (maximum-likelihood estimation) approach was used. </p>
+<p><strong>Parameterization</strong></p>
+<p>A generalized affine diffusion is a continuous semimartingale X ([definition] Semimartingale: In probability theory, a real valued stochastic process X is called a semimartingale if it can be decomposed as the sum of a local martingale and an adapted finite-variation process. ) which is a unique strong solution of the stochastic differential equation (SDE):</p>
+<p><img src="https://www.zhihu.com/equation?tex=dX_t=(b_0+b_1X_t)dt++(a_0+a_1X_t)%5E%5Cgamma+dW_t"> , where <img src="https://www.zhihu.com/equation?tex=%5Cgamma=1/2"> gives the well-known special case of a (continuous) affine process.</p>
+<p>Another intuition here within parameter uncertainty is that: instead of assuming the parameter <img src="https://www.zhihu.com/equation?tex=%5Ctheta"> to be known exactly, the authors introduce an interval <img src="https://www.zhihu.com/equation?tex=%5B%5Cunderline%7B%5Ctheta%7D,+%5Cbar%7B%5Ctheta%7D%5D"> and consider each value in the interval equally possible. The description of the generalized affine process under parameter uncertainty is now intuitively given by all those probability laws describing a diffusion where the drift and the volatility always stay in the intervals <img src="https://www.zhihu.com/equation?tex=b(x)"> and <img src="https://www.zhihu.com/equation?tex=a(x)"> . </p>
+<p><strong>Robust pricing of derivatives</strong></p>
+<p>The study has considered an European claim with maturity <img src="https://www.zhihu.com/equation?tex=T"> and payoff <img src="https://www.zhihu.com/equation?tex=%5Cpsi(X_T)"> . The value function v is defined as:</p>
+<p><img src="https://www.zhihu.com/equation?tex=v(t,x):=%5Csup_%7BP%5Cin+A(t,+x,%5CTheta)%7D%5Cmathbb%7BE%7D%5EP%5B%5Cpsi(X_T)%5D"></p>
+<p>where A is referred as all absolutely continuous semimartingale laws. </p>
+<p>In the next stage of the study, the authors used nonlinear Kolmogorov equation as an efficient tool to compute the value function by solving nonlinear partial differential equations numerically (based on Theorem 2.2, page 5). In other words, the goal here is to find a numerical procedure which replaces the classical Monte-Carlo estimation in a robust setting. </p>
+<p>In particular, deep neutral networks were applied to find the optimal parameters within the given intervals (i.e. parameter uncertainty) in order to minimize the hedging error. The full procedure is summarized by the algorithm 1 below:</p>
+<p><img src="https://pic3.zhimg.com/80/v2-ddf41a684796a41ae21312cbe4dd79d6_1440w.jpg"></p>
+<p>If you are interested in further application of this robust hedging strategy in option products or real life data, more examples can be found in the paper:</p>
+<ul>
+<li>3.2.1 Hedging of at-the-money call options, page7-9</li>
+<li>3.2.2. Hedging of a butterfly option, page9-10</li>
+<li>3.2.3 Hedging of a path-dependent option, page10</li>
+<li>4 US stock market index S&amp;P 500 from 26 September 2008 until 09 April 2020 from Thomson Reuters Eikon (excluding the Covid-19 period for containing high volatility)</li>
+</ul>
+]]></content>
+      <categories>
+        <category>academics</category>
+        <category>journal review</category>
+      </categories>
+      <tags>
+        <tag>Statistics</tag>
+        <tag>Finance</tag>
+        <tag>DNN</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Body Reform | 健身日志02</title>
     <url>/2021/07/05/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9702/</url>
     <content><![CDATA[<blockquote>

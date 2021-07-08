@@ -21,25 +21,38 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.5.0","exturl":false,"sidebar":{"position":"right","width":240,"display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="Personal website for idea spreading.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="My Channel">
-<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta name="description" content="The purpose of this article is to propose additional tools of verification, such as score decompositions, graphical&#x2F;numerical diagnoses of reliability and discrimination. These procedures are illustra">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Verification of probability forecasts for football outcomes">
+<meta property="og:url" content="http://example.com/2021/07/07/p5/index.html">
 <meta property="og:site_name" content="My Channel">
-<meta property="og:description" content="Personal website for idea spreading.">
+<meta property="og:description" content="The purpose of this article is to propose additional tools of verification, such as score decompositions, graphical&#x2F;numerical diagnoses of reliability and discrimination. These procedures are illustra">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=S(P,X)=(P-X)%5E2">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Cmathbb%7BE%7D%5BS(P,X)%5D=Var(X)-Var_P+%5B%5Cmathbb%7BE%7D_X(X%7CP)%5D+%5Cmathbb%7BE%7D_P%7B%5B%5Cmathbb%7BE%7D_X(X%7CP)-P%5D%5E2%7D">
+<meta property="og:image" content="https://pic4.zhimg.com/80/v2-9a10c88320d5aefa7de907d052a8ea3b_1440w.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/80/v2-64ac5d39d38cf7d18a08586ea09b5be4_1440w.jpg">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=logit%5BPr(X_i=1)%5D=%5Calpha+%5Cbeta+%5Ctimes+logit(p_i)">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Calpha%3E0+%5Cmbox%7B+and+%7D+%5Cbeta=1">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Calpha%3C0+%5Cmbox%7B+and+%7D+%5Cbeta=1">
+<meta property="og:image" content="https://pic1.zhimg.com/80/v2-5101660968fce9aefa0f3883704d1e40_1440w.jpg">
+<meta property="article:published_time" content="2021-07-07T13:40:20.000Z">
+<meta property="article:modified_time" content="2021-07-08T00:23:56.039Z">
 <meta property="article:author" content="Klein">
+<meta property="article:tag" content="Statistics">
+<meta property="article:tag" content="Brier Score">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.zhihu.com/equation?tex=S(P,X)=(P-X)%5E2">
 
 
-<link rel="canonical" href="http://example.com/page/2/">
+<link rel="canonical" href="http://example.com/2021/07/07/p5/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"page/2/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2021/07/07/p5/","path":"2021/07/07/p5/","title":"Verification of probability forecasts for football outcomes"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>My Channel</title>
+<title>Verification of probability forecasts for football outcomes | My Channel</title>
   
 
 
@@ -133,7 +146,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -146,6 +159,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Abstract"><span class="nav-number">1.</span> <span class="nav-text">Abstract</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">2.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Parameterization-Decomposition-of-the-Brier-score"><span class="nav-number">3.</span> <span class="nav-text">Parameterization: Decomposition of the Brier score</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Methodology-amp-Analysis"><span class="nav-number">4.</span> <span class="nav-text">Methodology &amp; Analysis</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -233,17 +247,18 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/23/p3/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/07/p5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -255,9 +270,9 @@
       <meta itemprop="name" content="My Channel">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/06/23/p3/" class="post-title-link" itemprop="url">Credit Scoring via Logistic Regression</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Verification of probability forecasts for football outcomes
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -267,14 +282,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-06-23 21:40:20" itemprop="dateCreated datePublished" datetime="2021-06-23T21:40:20+08:00">2021-06-23</time>
+      <time title="Created: 2021-07-07 21:40:20" itemprop="dateCreated datePublished" datetime="2021-07-07T21:40:20+08:00">2021-07-07</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-06-27 15:04:31" itemprop="dateModified" datetime="2021-06-27T15:04:31+08:00">2021-06-27</time>
+        <time title="Modified: 2021-07-08 08:23:56" itemprop="dateModified" datetime="2021-07-08T08:23:56+08:00">2021-07-08</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -291,8 +306,16 @@
     </span>
 
   
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
 </div>
 
+            <div class="post-description">The purpose of this article is to propose additional tools of verification, such as score decompositions, graphical/numerical diagnoses of reliability and discrimination. These procedures are illustrated on probability forecasts for the outcomes of the UEFA Champions League (C1) at the end of the group stage based on typical Poisson regression models with reasonably good results in terms of reliability.</div>
         </div>
       </header>
 
@@ -300,16 +323,30 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>In this paper we use a logistic regression model to predict the creditworthiness of bank customers using predictors related to their personal status and financial history. Model adequacy and robustness checks are performed to ensure that the model is being properly fitted and interpreted.</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/23/p3/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+        <p>*<strong>More on verification of probability forecasts for football outcomes: score decompositions, reliability, and discrimination analyses*</strong></p>
+<p>Authors: Jean-Louis Foulley</p>
+<p>Link: <a href="https://link.zhihu.com/?target=https://arxiv.org/abs/2106.14345">https://arxiv.org/abs/2106.14345</a></p>
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><blockquote>
+<p>Forecast of football outcomes in terms of Home Win, Draw and Away Win (HDA) relies largely on ex ante probability elicitation of these events and ex post verification of them via computation of probability scoring rules (Brier, Ranked Probability, Logarithmic, Zero-One scores). Usually, appraisal of the quality of forecasting procedures is restricted to reporting mean score values. The purpose of this article is to propose additional tools of verification, such as score decompositions into several components of special interest. Graphical and numerical diagnoses of reliability and discrimination and kindred statistical methods are presented using different techniques of binning (fixed thresholds, quantiles, logistic and iso regression). These procedures are illustrated on probability forecasts for the outcomes of the UEFA Champions League (C1) at the end of the group stage based on typical Poisson regression models with reasonably good results in terms of reliability as compared to those obtained from bookmaker odds and whatever the technique used. Links with research in machine learning and different areas of application (meteorology, medicine) are discussed.</p>
+</blockquote>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a><strong>Introduction</strong></h2><p>In the article, the author is considering outcome variables as HAD (Home Win, Away Win, Draw) categorical results, in terms of scorelines {Y(A), Y(B)} goals in match (A vs B) i.e., pairs of integers. Traditionally in football, one summarizes HDA forecast performance by a synthetic criterion such as the mean square error known as Brier’s score (1950). To review the deficiencies of issued forecasts, analytical attributes of Brier’s score can be brought out such as Reliability, Resolution, Discrimination, Refinement and etc. </p>
+<h2 id="Parameterization-Decomposition-of-the-Brier-score"><a href="#Parameterization-Decomposition-of-the-Brier-score" class="headerlink" title="Parameterization: Decomposition of the Brier score"></a><strong>Parameterization: Decomposition of the Brier score</strong></h2><p>Let X be the binary outcome of the event H with probability and P the random variable probabilistic forecast of X taking values p. The Half-Brier score defined as the loss function <img src="https://www.zhihu.com/equation?tex=S(P,X)=(P-X)%5E2"> . Using the conditioning rule, the Murphy (1973, Calibration-Refinement factorization) decomposition of its expectation can be written as:</p>
+<p><img src="https://www.zhihu.com/equation?tex=%5Cmathbb%7BE%7D%5BS(P,X)%5D=Var(X)-Var_P+%5B%5Cmathbb%7BE%7D_X(X%7CP)%5D+%5Cmathbb%7BE%7D_P%7B%5B%5Cmathbb%7BE%7D_X(X%7CP)-P%5D%5E2%7D"></p>
+<p>, where three terms are respectively representing Uncertainty (UNC), Resolution (RES) and Reliability (REL). </p>
+<ul>
+<li>UNC measures the variance of the outcome that is out of control of the forecaster,</li>
+<li>RES measures the variability between the conditional expectations of the observed outcomes given their forecasts (i.e. the ability of forecast to distinguish situations with distinctly different frequencies of occurrence),</li>
+<li>REL measures the average squared differences between the conditional expectation of the outcome and its forecast. </li>
+</ul>
+<p><img src="https://pic4.zhimg.com/80/v2-9a10c88320d5aefa7de907d052a8ea3b_1440w.jpg"></p>
+<p>A second factorization method (Likelihood-base) is also discussed which includes a Refinement (REF), Discrimination (DIS) term. </p>
+<h2 id="Methodology-amp-Analysis"><a href="#Methodology-amp-Analysis" class="headerlink" title="Methodology &amp; Analysis"></a><strong>Methodology &amp; Analysis</strong></h2><p>A logistic model of the probability of Homewin, Draw and Awaywin (HDA) was fitted on the logit of its probabilistic forecast under a Poisson regression model (POI). </p>
+<p><img src="https://pic1.zhimg.com/80/v2-64ac5d39d38cf7d18a08586ea09b5be4_1440w.jpg"></p>
+<p>Following Cox (1958), the model relating X to P is written via a logit linear predictor: <img src="https://www.zhihu.com/equation?tex=logit%5BPr(X_i=1)%5D=%5Calpha+%5Cbeta+%5Ctimes+logit(p_i)"> with i) ( <img src="https://www.zhihu.com/equation?tex=%5Calpha%3E0+%5Cmbox%7B+and+%7D+%5Cbeta=1"> ) for concave under-forecasting profiles; and ii) ( <img src="https://www.zhihu.com/equation?tex=%5Calpha%3C0+%5Cmbox%7B+and+%7D+%5Cbeta=1"> ) for convex over-forecasting profiles. </p>
+<p>From the Reliability Diagrams for Home Win Probability Forecasts, results were shown that the forecasts were reliable with 95% Consistency Bands. </p>
+<p><img src="https://pic1.zhimg.com/80/v2-5101660968fce9aefa0f3883704d1e40_1440w.jpg"></p>
+<p>The article has further discussed verifications on Likelihood-base and Yates’ decompositions of Brier’s score. Regarding its application to the UEFA Champions League, it turns out that forecasts of Away Wins is both well calibrated and refined with good discrimination properties. The same trend can be seen on Home Wins, but with a trade-off between that over-forecasted category and under-forecasted draws with little discrimination of draw forecasts.</p>
+
     </div>
 
     
@@ -317,277 +354,57 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
+          <div class="reward-container">
+  <div>Buy me a coffee</div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    Donate
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="Klein WeChat Pay">
+        <span>WeChat Pay</span>
+      </div>
+      <div>
+        <img src="/images/alipay.png" alt="Klein Alipay">
+        <span>Alipay</span>
+      </div>
+
+  </div>
 </div>
 
+          <div class="followme">
+  <span>Welcome to my other publishing channels</span>
 
+  <div class="social-list">
 
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://www.zhihu.com/people/wang-yuan-chen-24">
+          <span class="icon">
+            <i class="fab fa-zhihu"></i>
+          </span>
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/22/p2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Klein">
-      <meta itemprop="description" content="Personal website for idea spreading.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My Channel">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/06/22/p2/" class="post-title-link" itemprop="url">PlanGAN, Model-based Planning With Sparse Rewards and Multiple Goals</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-06-22 21:40:20" itemprop="dateCreated datePublished" datetime="2021-06-22T21:40:20+08:00">2021-06-22</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-06-27 15:04:06" itemprop="dateModified" datetime="2021-06-27T15:04:06+08:00">2021-06-27</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/academics/" itemprop="url" rel="index"><span itemprop="name">academics</span></a>
-        </span>
-          , 
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/academics/journal-review/" itemprop="url" rel="index"><span itemprop="name">journal review</span></a>
-        </span>
-    </span>
-
-  
+          <span class="label">Zhihu</span>
+        </a>
+      </div>
+  </div>
 </div>
 
-        </div>
-      </header>
+          <div class="post-tags">
+              <a href="/tags/Statistics/" rel="tag"># Statistics</a>
+              <a href="/tags/Brier-Score/" rel="tag"># Brier Score</a>
+          </div>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>In this work we propose PlanGAN, a model-based algorithm specifically designed for solving multi-goal tasks in environments with sparse rewards. Our method builds on the fact that any trajectory of experience collected by an agent contains useful information about how to achieve the goals observed during that trajectory.</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/22/p2/">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/21/p1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Klein">
-      <meta itemprop="description" content="Personal website for idea spreading.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My Channel">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/06/21/p1/" class="post-title-link" itemprop="url">Hindsight Experience Replay</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-06-21 23:40:20" itemprop="dateCreated datePublished" datetime="2021-06-21T23:40:20+08:00">2021-06-21</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-06-27 15:03:42" itemprop="dateModified" datetime="2021-06-27T15:03:42+08:00">2021-06-27</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/academics/" itemprop="url" rel="index"><span itemprop="name">academics</span></a>
-        </span>
-          , 
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/academics/journal-review/" itemprop="url" rel="index"><span itemprop="name">journal review</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Dealing with sparse rewards is one of the biggest challenges in Reinforcement Learning (RL). We present a novel technique called Hindsight Experience Replay which allows sample-efficient learning from rewards which are sparse and binary and therefore avoid the need for complicated reward engineering.</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/06/21/p1/">
-                Read more &raquo;
-              </a>
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/07/06/p4/" rel="prev" title="Robust deep hedging">
+                  <i class="fa fa-chevron-left"></i> Robust deep hedging
+                </a>
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Klein">
-      <meta itemprop="description" content="Personal website for idea spreading.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My Channel">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/" class="post-title-link" itemprop="url">Body Reform | 健身日志01</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-05-11 23:40:20" itemprop="dateCreated datePublished" datetime="2021-05-11T23:40:20+08:00">2021-05-11</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-07-05 19:33:41" itemprop="dateModified" datetime="2021-07-05T19:33:41+08:00">2021-07-05</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/hobbies/" itemprop="url" rel="index"><span itemprop="name">hobbies</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>这次的日志记录了4月末为期10天（4/21-4/30）的训练内容，平均下来一周每个肌群会训练1到2次。由于我自己的体脂含量偏高，所以力量训练结束后会进行30min左右的有氧，来加速身体内脂肪的燃烧。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/05/11/%E5%81%A5%E8%BA%AB%E6%97%A5%E5%BF%9701/">
-                Read more &raquo;
-              </a>
+            <div class="post-nav-item">
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          </div>
     </footer>
   </article>
 </div>
@@ -595,9 +412,7 @@
 
 
 
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-  </nav>
+
 
 </div>
   </main>
